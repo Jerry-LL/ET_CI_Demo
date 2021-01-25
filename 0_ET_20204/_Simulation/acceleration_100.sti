@@ -1,0 +1,66 @@
+<SignalDescriptionFile xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sti="http://www.asam.net/XIL/Signal/2.0" xmlns="http://www.asam.net/XIL/Signal/2.0" version="1.0">
+    <SignalDescriptionSet name="Stimulus">
+        <SignalDescription name="VEHICLE_VELOCITY" id="ID_SIGNAL_1">
+            <SegmentSignalDescription loopCount="1">
+                <ExpSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1000.0</Value>
+                    </Duration>
+                    <Start xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Start>
+                    <Stop xsi:type="ConstSymbol">
+                        <Value>120</Value>
+                    </Stop>
+                    <Tau xsi:type="ConstSymbol">
+                        <Value>8</Value>
+                    </Tau>
+                </ExpSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+        <SignalDescription name="VEHICLE_VELOCITY_BUS" id="ID_SIGNAL_2">
+            <SegmentSignalDescription loopCount="1">
+                <ConstSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>0.2</Value>
+                    </Duration>
+                    <Value xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Value>
+                </ConstSegment>
+                <ExpSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1000.0</Value>
+                    </Duration>
+                    <Start xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Start>
+                    <Stop xsi:type="ConstSymbol">
+                        <Value>120</Value>
+                    </Stop>
+                    <Tau xsi:type="ConstSymbol">
+                        <Value>8</Value>
+                    </Tau>
+                </ExpSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+        <SignalDescription name="VEHICLE_SPEED" id="ID_SIGNAL_3">
+            <SegmentSignalDescription loopCount="1">
+                <ExpSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1000.0</Value>
+                    </Duration>
+                    <Start xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Start>
+                    <Stop xsi:type="ConstSymbol">
+                        <Value>33.33333333</Value>
+                    </Stop>
+                    <Tau xsi:type="ConstSymbol">
+                        <Value>8</Value>
+                    </Tau>
+                </ExpSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+    </SignalDescriptionSet>
+</SignalDescriptionFile>

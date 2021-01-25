@@ -1,0 +1,44 @@
+<SignalDescriptionFile xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sti="http://www.asam.net/XIL/Signal/2.0" xmlns="http://www.asam.net/XIL/Signal/2.0" version="1.0">
+    <SignalDescriptionSet name="Stimulus">
+        <SignalDescription name="VEHICLE_TRACTION_STANDBY_TCD" id="ID_SIGNAL_1">
+            <SegmentSignalDescription loopCount="1">
+                <ConstSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>0.34</Value>
+                    </Duration>
+                    <Value xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Value>
+                </ConstSegment>
+                <ConstSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1000.0</Value>
+                    </Duration>
+                    <Value xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Value>
+                </ConstSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+        <SignalDescription name="VEHICLE_TRACTION_STANDBY_MEAS" id="ID_SIGNAL_2">
+            <SegmentSignalDescription loopCount="1">
+                <ConstSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>0.57</Value>
+                    </Duration>
+                    <Value xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Value>
+                </ConstSegment>
+                <ConstSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1000.0</Value>
+                    </Duration>
+                    <Value xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Value>
+                </ConstSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+    </SignalDescriptionSet>
+</SignalDescriptionFile>

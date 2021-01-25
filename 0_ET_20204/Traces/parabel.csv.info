@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CSV-INFO format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<LINE-NUMBER-HEADER xsi:type="integer">0</LINE-NUMBER-HEADER>
+	<DELIMETER-COUMNS xsi:type="unicode">;</DELIMETER-COUMNS>
+	<DELIMETER-DECIMAL-POINT xsi:type="unicode">.</DELIMETER-DECIMAL-POINT>
+	<DELIMETER-MIL-POINT xsi:type="unicode">,</DELIMETER-MIL-POINT>
+	<SIGNAL-NAME-TIME xsi:type="unicode">0</SIGNAL-NAME-TIME>
+</CSV-INFO>

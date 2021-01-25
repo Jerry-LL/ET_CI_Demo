@@ -1,0 +1,48 @@
+<SignalDescriptionFile xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sti="http://www.asam.net/XIL/Signal/2.0" xmlns="http://www.asam.net/XIL/Signal/2.0" version="1.0">
+    <SignalDescriptionSet name="Stimulus">
+        <SignalDescription name="ramp_down" id="ID_SIGNAL_2">
+            <SegmentSignalDescription loopCount="1">
+                <RampSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>200</Value>
+                    </Duration>
+                    <Start xsi:type="ConstSymbol">
+                        <Value>10.0</Value>
+                    </Start>
+                    <Stop xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Stop>
+                </RampSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+        <SignalDescription name="BATTERY_DISCHARGE" id="ID_SIGNAL_3">
+            <OperationSignalDescription>
+                <Operation value="eAdd">
+                    <LeftSignal value="ID_SIGNAL_2"/>
+                    <RightSignal value="ID_SIGNAL_4"/>
+                </Operation>
+            </OperationSignalDescription>
+        </SignalDescription>
+        <SignalDescription name="sin_down" id="ID_SIGNAL_4">
+            <SegmentSignalDescription loopCount="1">
+                <SineSegment>
+                    <Amplitude xsi:type="ConstSymbol">
+                        <Value>60.0</Value>
+                    </Amplitude>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>200</Value>
+                    </Duration>
+                    <Offset xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Offset>
+                    <Period xsi:type="ConstSymbol">
+                        <Value>800</Value>
+                    </Period>
+                    <Phase xsi:type="ConstSymbol">
+                        <Value>0.25</Value>
+                    </Phase>
+                </SineSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+    </SignalDescriptionSet>
+</SignalDescriptionFile>

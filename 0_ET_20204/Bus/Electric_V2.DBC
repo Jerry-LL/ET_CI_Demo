@@ -1,0 +1,58 @@
+VERSION "HIPBNNNYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+BO_ 100 TIME_DATE: 8 INSTR
+ SG_ DISP_YEAR : 40|16@1+ (1,0) [0|0] ""  dummy
+ SG_ DISP_MONTH : 36|4@1+ (1,0) [0|0] ""  dummy
+ SG_ DISP_WDAY : 32|4@1+ (1,0) [0|0] ""  dummy
+ SG_ DISP_DAY : 24|8@1+ (1,0) [0|0] ""  dummy
+ SG_ DISP_SECOND : 16|8@1+ (1,0) [0|0] "s"  dummy
+ SG_ DISP_MINUTE : 8|8@1+ (1,0) [0|0] "min"  dummy
+ SG_ DISP_HOUR : 0|8@1+ (1,0) [0|0] "h"  dummy
+
+BO_ 200 WARNINGS: 8 INSTR
+ SG_ DOOR_DRIVER : 40|16@1+ (1,0) [0|1] ""  dummy
+ SG_ DOOR_PASSENGER : 36|4@1+ (1,0) [0|1] ""  dummy
+ SG_ TRUNK : 32|4@1+ (1,0) [0|1] ""  dummy
+ SG_ HOOD : 24|8@1+ (1,0) [0|1] ""  dummy
+ SG_ CHARGING_CABLE : 16|8@1+ (1,0) [0|1] ""  dummy
+ SG_ SEATBELT_DRIVER : 8|8@1+ (1,0) [0|1] ""  dummy
+ SG_ SEATBELT_PASSENGER : 0|8@1+ (1,0) [0|1] ""  dummy
+
+BO_ 300 ENG_DATA: 8 RANGE_EXTENDER
+ SG_ ENG_RPM : 40|16@1+ (0.25,0) [0|12000] "1/min"  dummy
+ SG_ ENG_TEMP : 0|16@1+ (1,0) [0|120] "°C"  dummy
+ SG_ ENG_TORQ : 16|12@1+ (0.5,-1023.5) [-1023.5|1023.5] "Nm"  dummy
+
+BO_ 400 STATE: 8 BATTERY_UNIT
+ SG_ VOLTAGE : 32|16@1+ (1,0) [0|800] ""  dummy
+ SG_ STATE_OF_CHARGE : 8|4@1+ (1,0) [0|100] ""  dummy
+ SG_ STATE_OF_HEALTH : 0|8@1+ (1,0) [0|100] ""  dummy
+
+BO_ 500 CELLS: 8 BATTERY_UNIT
+ SG_ CELL7 : 40|16@1+ (1,0) [0|120] "V"  dummy
+ SG_ CELL6 : 36|4@1+ (1,0) [0|120] "V"  dummy
+ SG_ CELL5 : 32|4@1+ (1,0) [0|120] "V"  dummy
+ SG_ CELL4 : 24|8@1+ (1,0) [0|120] "V"  dummy
+ SG_ CELL3 : 16|8@1+ (1,0) [0|120] "V"  dummy
+ SG_ CELL2 : 8|8@1+ (1,0) [0|120] "V"  dummy
+ SG_ CELL1 : 0|8@1+ (1,0) [0|120] "V"  dummy
+
+BO_ 600 CONTROL_SIGNALS_BUS: 8 ELECTRIC_POWER_TRAIN
+ SG_ VEHICLE_TRACTION_STANDBY : 32|16@1+ (1,0) [0|1] ""  dummy
+ SG_ RECUPERATION : 8|4@1+ (1,0) [0|5] ""  dummy
+ SG_ DRIVING_MODE : 0|8@1+ (1,0) [0|2] ""  dummy
+ SG_ START_BUTTON : 0|8@1+ (1,0) [0|0] ""  dummy
+ 
+BO_ 700 ENG_DATA: 8 ELECTRIC_POWER_TRAIN
+ SG_ ENGINE_RPM : 32|16@1+ (1,0) [0|0] ""  dummy
+ SG_ ENG_TORQ : 8|4@1+ (1,0) [0|0] ""  dummy
+ SG_ ENG_VOLT : 0|8@1+ (1,0) [0|0] ""  dummy
+ SG_ ENG_CURRENT : 0|8@1+ (1,0) [0|0] ""  dummy
+
+BO_ 800 VEH_DATA: 8 ELECTRIC_POWER_TRAIN
+ SG_ VEHICLE_SPEED : 32|16@1+ (1,0) [0|800] "m/s"  dummy
+ SG_ BRAKEPEDAL : 8|4@1+ (1,0) [0|100] ""  dummy
+ SG_ DRIVER_REQUEST : 0|8@1+ (1,0) [0|100] ""  dummy
+
+EV_ TestVar: 0 [0|0] "" 0 1 DUMMY_NODE Vector__XXX;
+

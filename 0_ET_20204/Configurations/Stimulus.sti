@@ -1,0 +1,92 @@
+<SignalDescriptionFile xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sti="http://www.asam.net/XIL/Signal/2.0" xmlns="http://www.asam.net/XIL/Signal/2.0" version="1.0">
+    <SignalDescriptionSet name="Stimulus">
+        <SignalDescription name="Signal description" id="ID_SIGNAL_1">
+            <SegmentSignalDescription loopCount="1">
+                <ConstSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Duration>
+                    <Value xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Value>
+                </ConstSegment>
+                <RampSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Duration>
+                    <Start xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Start>
+                    <Stop xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Stop>
+                </RampSegment>
+                <RampSlopeSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Duration>
+                    <Offset xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Offset>
+                    <Slope xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Slope>
+                </RampSlopeSegment>
+                <SawSegment>
+                    <Amplitude xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Amplitude>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Duration>
+                    <DutyCycle xsi:type="ConstSymbol">
+                        <Value>0.5</Value>
+                    </DutyCycle>
+                    <Offset xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Offset>
+                    <Period xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Period>
+                    <Phase xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Phase>
+                </SawSegment>
+                <PulseSegment>
+                    <Amplitude xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Amplitude>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Duration>
+                    <DutyCycle xsi:type="ConstSymbol">
+                        <Value>0.5</Value>
+                    </DutyCycle>
+                    <Offset xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Offset>
+                    <Period xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Period>
+                    <Phase xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Phase>
+                </PulseSegment>
+                <ExpSegment>
+                    <Duration xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Duration>
+                    <Start xsi:type="ConstSymbol">
+                        <Value>0.0</Value>
+                    </Start>
+                    <Stop xsi:type="ConstSymbol">
+                        <Value>1.0</Value>
+                    </Stop>
+                    <Tau xsi:type="ConstSymbol">
+                        <Value>0.5</Value>
+                    </Tau>
+                </ExpSegment>
+            </SegmentSignalDescription>
+        </SignalDescription>
+    </SignalDescriptionSet>
+</SignalDescriptionFile>

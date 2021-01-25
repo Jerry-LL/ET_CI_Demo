@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TRACE-STEP-PROTOTYPE format-rev="1" uuid="540b189e327311e6a09dfcf8aeb9b2bf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="trcpLogic">
+	<SIGNALS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="5509eb00327311e68d86fcf8aeb9b2bf" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Button</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="554a0140327311e686f9fcf8aeb9b2bf" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Reaction</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+	</SIGNALS>
+	<PARAMETERS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="818f4d30327a11e69ab2fcf8aeb9b2bf" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">timeout</NAME>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+	</PARAMETERS>
+	<FORMULA xsi:type="unicode">&quot;Button == 1&quot; -&gt; F[0,timeout](&quot;Reaction == 1&quot;)</FORMULA>
+</TRACE-STEP-PROTOTYPE>

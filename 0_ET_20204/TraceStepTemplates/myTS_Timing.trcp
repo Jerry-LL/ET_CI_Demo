@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TRACE-STEP-PROTOTYPE format-rev="2" uuid="7a0b5700543a11e8b35b5ce0c54afbfe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="trcpTimingDiagram">
+	<SIGNALS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="7a0d04b0543a11e898245ce0c54afbfe" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Button</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="7a0d04b1543a11e8b2475ce0c54afbfe" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Reaction</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+	</SIGNALS>
+	<PARAMETERS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="7a0d04b2543a11e8bf085ce0c54afbfe" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">MinMaxSuccessfulInstances</NAME>
+			<DESCRIPTION xsi:type="unicode">Anzahl, wie oft das Diagramm erfolgreich gefunden werden soll.
+Der Wert kann eine Zahl oder ein Bereich sein (zwei durch Komma getrennte Werte in Klammern).
+&quot;None&quot; als Bereichsgrenze bedeutet, dass die Grenze nicht geprüft wird.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">PYOBJECT</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="7a0d04b3543a11e892465ce0c54afbfe" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">AllowFailedInstances</NAME>
+			<DESCRIPTION xsi:type="unicode">Gibt an, ob das Diagramm fehlschlagen darf.
+Der Wert muss ein Wahrheitswert (True oder False) sein.None ist ebenfalls zulässig und bedeutet False.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">PYOBJECT</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="7a0d04b4543a11e88d6d5ce0c54afbfe" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">MaxParallelInstances</NAME>
+			<DESCRIPTION xsi:type="unicode">Maximale Anzahl von Diagramminstanzen, die parallelausgewertet werden dürfen. Ein Wert &lt;= 0 bedeutet beliebig viele.None ist ebenfalls zulässig und bedeutet 1.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="7a0d2bc0543a11e8b8a95ce0c54afbfe" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">threshold</NAME>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="7a0d2bc1543a11e8bd775ce0c54afbfe" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">timeout</NAME>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+	</PARAMETERS>
+	<TDX xsi:type="tdxForEix">
+		<timingDiagram>
+			<version>1.2</version>
+			<timeUnits>SECONDS</timeUnits>
+			<description/>
+			<parameter>
+				<name>threshold</name>
+				<description/>
+				<type>INTEGER</type>
+			</parameter>
+			<parameter>
+				<name>timeout</name>
+				<description/>
+				<type>INTEGER</type>
+			</parameter>
+			<signal precondition="true">
+				<name>Button</name>
+				<description/>
+				<waveForm>
+					<edge id="_878740368" precondition="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== 0</expression>
+						</state>
+					</edge>
+					<edge id="_878740648" initial="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== 1</expression>
+						</state>
+					</edge>
+				</waveForm>
+			</signal>
+			<signal>
+				<name>Reaction</name>
+				<description/>
+				<waveForm>
+					<edge id="_878741376" precondition="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== 0</expression>
+						</state>
+					</edge>
+					<edge id="_878741656">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== 1</expression>
+						</state>
+					</edge>
+				</waveForm>
+			</signal>
+			<relationship>
+				<minDuration>0</minDuration>
+				<maxDuration>timeout</maxDuration>
+				<sourceId>_878740648</sourceId>
+				<targetId>_878741656</targetId>
+				<description/>
+			</relationship>
+		</timingDiagram>
+	</TDX>
+	<IMAGE-DATA xsi:type="string">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</IMAGE-DATA>
+</TRACE-STEP-PROTOTYPE>

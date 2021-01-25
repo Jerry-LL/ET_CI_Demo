@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TOOLING format-rev="2" prog-version="7.0.2.73517" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+	<TOOL-HOSTS>
+		<TOOL-HOST xsi:type="toolHost">
+			<URL xsi:type="unicode">local</URL>
+			<BASE-PATH xsi:type="unicode">&lt;workspace&gt;</BASE-PATH>
+		</TOOL-HOST>
+	</TOOL-HOSTS>
+	<TOOLS>
+		<TOOL id="CONTROLDESK" xsi:type="tool">
+			<TOOL-HOST xsi:type="unicode">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="unicode">MODELDUMMY</TOOL-NAME>
+			<START-OPTION xsi:type="integer">0</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="ModelDir" propertyType="uri" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="unicode">Offline-Models</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</TOOL>
+		<TOOL id="INCA" xsi:type="tool">
+			<TOOL-HOST xsi:type="unicode">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="unicode">APPLICATIONDUMMY</TOOL-NAME>
+			<START-OPTION xsi:type="integer">0</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet"/>
+		</TOOL>
+		<TOOL id="VECTOR-HW" xsi:type="tool">
+			<TOOL-HOST xsi:type="unicode">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="unicode">BUSDUMMY</TOOL-NAME>
+			<START-OPTION xsi:type="integer">0</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet"/>
+		</TOOL>
+	</TOOLS>
+	<PORTS>
+		<PORT format-rev="2" id="MDL01" toolId="CONTROLDESK" xsi:type="port">
+			<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+				<REPRESENTATION xsi:type="integer">3</REPRESENTATION>
+			</PORT-TYPE-ID>
+			<IMPL-TYPE-ID xsi:type="unicode">Standard</IMPL-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="ModelFile" propertyType="uri" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="unicode">&lt;auto&gt;</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</PORT>
+		<PORT format-rev="2" id="APL01" toolId="INCA" xsi:type="port">
+			<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+				<REPRESENTATION xsi:type="integer">28</REPRESENTATION>
+			</PORT-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet"/>
+		</PORT>
+		<PORT format-rev="2" id="APL02" toolId="INCA" xsi:type="port">
+			<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+				<REPRESENTATION xsi:type="integer">28</REPRESENTATION>
+			</PORT-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet"/>
+		</PORT>
+		<PORT format-rev="2" id="BUS01" toolId="VECTOR-HW" xsi:type="port">
+			<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+				<REPRESENTATION xsi:type="integer">384</REPRESENTATION>
+			</PORT-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet"/>
+		</PORT>
+	</PORTS>
+	<TOOL-DESCRIPTORS>
+		<TOOL-DESCRIPTOR dkey="CONTROLDESK">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="unicode">MODELDUMMY</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+							<REPRESENTATION xsi:type="integer">3</REPRESENTATION>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="unicode">Standard</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="unicode">Generic model access</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="unicode">STIMULATION</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="unicode">Access to stimulation definitions</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+							<REPRESENTATION xsi:type="integer">384</REPRESENTATION>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="unicode">GENERIC</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="unicode">Generic bus access</DESCRIPTION>
+						</IMPL-TYPE>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="unicode">GENERIC_MAPPINGFILE</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="unicode">Generic bus access with model-to-bus-signal mapping file</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">execDelay</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Execution Delay</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Amount of extra time in ms that operations should consume</DESCRIPTION>
+						<TYPE xsi:type="unicode">int</TYPE>
+						<DEFAULT xsi:type="unicode">0</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">domainProperty</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Property with predefined selections</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Translated property with predefined values </DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="unicode">Action</ELEMENT>
+							<ELEMENT xsi:type="unicode">Evaluation</ELEMENT>
+							<ELEMENT xsi:type="unicode">Translation</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="unicode">Translation</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">ModelDir</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Model directory</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Directory for searching model files. If the path is relative, the base path of the tool host settings is used and will be extended by the model file directory.</DESCRIPTION>
+						<TYPE xsi:type="unicode">uri</TYPE>
+						<DEFAULT xsi:type="unicode">.</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">SetToolState</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">isBrokenValue</NAME>
+								<DESCRIPTION xsi:type="unicode">IsBroken return (True, False, None, Raise)</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">StartTimeMeasurement</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">measurementCount</NAME>
+								<DESCRIPTION xsi:type="unicode">Initialize measurement list</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">GetTimeSinceStartup</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">DoTimeMeasurement</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">StopTimeMeasurement</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">measTimeFilename</NAME>
+								<DESCRIPTION xsi:type="unicode">output file for measurement data</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">Eval</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">expression</NAME>
+								<DESCRIPTION xsi:type="unicode">Expression that is to be executed</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Evaluate an expression on the tool host</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="unicode">result</NAME>
+							<TYPE xsi:type="unicode">float</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">SendFile</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">srcPath</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">destFileName</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">GetFile</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">srcPath</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">destPath</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">DelayAndDoNothing</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">delay</NAME>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<DEFAULT xsi:type="unicode">5</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+		<TOOL-DESCRIPTOR dkey="INCA">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="unicode">APPLICATIONDUMMY</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+							<REPRESENTATION xsi:type="integer">28</REPRESENTATION>
+						</PORT-TYPE-ID>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">devices</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Devices</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Comma seperated list of used devices</DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DEFAULT xsi:type="unicode">CCP:1, CCP:2, ETKC:1, ETKC-A, ADS:1, CAN-Monitoring:1, CAN-Monitoring:2</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">CheckAllConnections</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="unicode">Provides the connection state of all devices</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">GetTimeSinceStartup</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+		<TOOL-DESCRIPTOR dkey="VECTOR-HW">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="unicode">BUSDUMMY</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+							<REPRESENTATION xsi:type="integer">384</REPRESENTATION>
+						</PORT-TYPE-ID>
+					</PORT-TYPE>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+							<REPRESENTATION xsi:type="integer">64</REPRESENTATION>
+						</PORT-TYPE-ID>
+						<IMPL-TYPE xsi:type="implTypeDescriptor">
+							<IMPL-TYPE-ID xsi:type="unicode">CAN</IMPL-TYPE-ID>
+							<DESCRIPTION xsi:type="unicode">BUSDUMMY-raw diagnostics</DESCRIPTION>
+						</IMPL-TYPE>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet"/>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">GetTimeSinceStartup</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+	</TOOL-DESCRIPTORS>
+	<PORT-DESCRIPTORS>
+		<PORT-DESCRIPTOR dkey="APL01">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+					<REPRESENTATION xsi:type="integer">28</REPRESENTATION>
+				</PORT-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">useRandomInit</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Initialize values with random numbers</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Random numbers for initial allocation of values will be created.</DESCRIPTION>
+						<TYPE xsi:type="unicode">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="unicode">False</ELEMENT>
+							<ELEMENT xsi:type="unicode">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="unicode">True</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">device</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Device name</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Name of access interface</DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DEFAULT xsi:type="unicode">ETKC:1</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">a2lFile</NAME>
+						<DISPLAY-NAME xsi:type="unicode">A2L file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">A2L file used by the port</DESCRIPTION>
+						<TYPE xsi:type="unicode">uri</TYPE>
+						<DEFAULT xsi:type="unicode">my.a2l</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">hexFile</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Hex file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Hex file used by the port</DESCRIPTION>
+						<TYPE xsi:type="unicode">uri</TYPE>
+						<DEFAULT xsi:type="unicode">my.hex</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">defaultRaster</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Default acquisition rate</DISPLAY-NAME>
+						<DESCRIPTION xsi:type="unicode">Declaration of measurement acquisition rate used as alternative in case no acquisition rate is set in the test step ('*' and '?' can be used as wildcard). &quot;Tool-Default&quot; activates the use of the standard acquisition rate of the tool.</DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DEFAULT xsi:type="unicode">Tool-Default</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet"/>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+		<PORT-DESCRIPTOR dkey="APL02">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+					<REPRESENTATION xsi:type="integer">28</REPRESENTATION>
+				</PORT-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">useRandomInit</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Initialize values with random numbers</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Random numbers for initial allocation of values will be created.</DESCRIPTION>
+						<TYPE xsi:type="unicode">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="unicode">False</ELEMENT>
+							<ELEMENT xsi:type="unicode">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="unicode">True</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">device</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Device name</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Name of access interface</DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DEFAULT xsi:type="unicode">ETKC:1</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">a2lFile</NAME>
+						<DISPLAY-NAME xsi:type="unicode">A2L file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">A2L file used by the port</DESCRIPTION>
+						<TYPE xsi:type="unicode">uri</TYPE>
+						<DEFAULT xsi:type="unicode">my.a2l</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">hexFile</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Hex file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Hex file used by the port</DESCRIPTION>
+						<TYPE xsi:type="unicode">uri</TYPE>
+						<DEFAULT xsi:type="unicode">my.hex</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">defaultRaster</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Default acquisition rate</DISPLAY-NAME>
+						<DESCRIPTION xsi:type="unicode">Declaration of measurement acquisition rate used as alternative in case no acquisition rate is set in the test step ('*' and '?' can be used as wildcard). &quot;Tool-Default&quot; activates the use of the standard acquisition rate of the tool.</DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DEFAULT xsi:type="unicode">Tool-Default</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet"/>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+		<PORT-DESCRIPTOR dkey="BUS01">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+					<REPRESENTATION xsi:type="integer">384</REPRESENTATION>
+				</PORT-TYPE-ID>
+				<BUS-TYPES>
+					<ELEMENT xsi:type="unicode">AccessActiveNode</ELEMENT>
+					<ELEMENT xsi:type="unicode">AccessManipulation</ELEMENT>
+					<ELEMENT xsi:type="unicode">AccessMonitoring</ELEMENT>
+				</BUS-TYPES>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">busType</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Bus type</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Determines the type of bus to be simulated by the BUSDUMMY</DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="unicode">CAN</ELEMENT>
+							<ELEMENT xsi:type="unicode">FlexRay</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="unicode">CAN</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">busDb</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Bus-DB</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<VALID-REFS>
+							<ELEMENT xsi:type="unicode">SUT</ELEMENT>
+						</VALID-REFS>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">HexService</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">SendID</NAME>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<DEFAULT xsi:type="unicode">0x12</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">SendData</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">ReceiveID</NAME>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<DEFAULT xsi:type="unicode">0x32</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">Timeout</NAME>
+								<DESCRIPTION xsi:type="unicode">stop time in ms to wait for an answer</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<DEFAULT xsi:type="unicode">2000</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">SendFrame</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameId</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame ID</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">Data</NAME>
+								<DESCRIPTION xsi:type="unicode">Send data</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Sends the given frame</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">ReadFrame</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameId</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame ID</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Reads a frame with the given ID (use InitFrame before!)</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">InitFrame</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameId</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame ID</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Register a frame id for reading</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">InitFlxFrame</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameId</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame ID</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">StartCycle</NAME>
+								<DESCRIPTION xsi:type="unicode">Start cycle</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">CycleRepetition</NAME>
+								<DESCRIPTION xsi:type="unicode">Cycle repetition</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">DataLength</NAME>
+								<DESCRIPTION xsi:type="unicode">Byte length</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Initializes the geiven frame (for ReadFlxFrame)</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">ReadFlxFrame</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameId</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame ID</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">StartCycle</NAME>
+								<DESCRIPTION xsi:type="unicode">Start cycle</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">CycleRepetition</NAME>
+								<DESCRIPTION xsi:type="unicode">Cycle repetition</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Reads the given frame ID (use InitFlxFrame before!)</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">SendFlxFrame</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameId</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame ID</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">StartCycle</NAME>
+								<DESCRIPTION xsi:type="unicode">Start cycle</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">CycleRepetition</NAME>
+								<DESCRIPTION xsi:type="unicode">Cycle repetition</DESCRIPTION>
+								<TYPE xsi:type="unicode">int</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">Data</NAME>
+								<DESCRIPTION xsi:type="unicode">Send data</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Sends the given frame</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">ResetFirstValue</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameName</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame name</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">SignalName</NAME>
+								<DESCRIPTION xsi:type="unicode">Signal name</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">NodeName</NAME>
+								<DESCRIPTION xsi:type="unicode">Name of the electronic control unit</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<DEFAULT xsi:type="unicode"/>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Erases the first received value of the given signal</DESCRIPTION>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">GetFirstValue</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">FrameName</NAME>
+								<DESCRIPTION xsi:type="unicode">Frame name</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">SignalName</NAME>
+								<DESCRIPTION xsi:type="unicode">Signal name</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">NodeName</NAME>
+								<DESCRIPTION xsi:type="unicode">Name of the electronic control unit</DESCRIPTION>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<DEFAULT xsi:type="unicode"/>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">Reset</NAME>
+								<DESCRIPTION xsi:type="unicode">Reset (True/False)</DESCRIPTION>
+								<TYPE xsi:type="unicode">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="unicode">False</ELEMENT>
+									<ELEMENT xsi:type="unicode">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="unicode">False</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">UseRawValue</NAME>
+								<DESCRIPTION xsi:type="unicode">Read raw value</DESCRIPTION>
+								<TYPE xsi:type="unicode">bool</TYPE>
+								<DOMAIN>
+									<ELEMENT xsi:type="unicode">False</ELEMENT>
+									<ELEMENT xsi:type="unicode">True</ELEMENT>
+								</DOMAIN>
+								<DEFAULT xsi:type="unicode">False</DEFAULT>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+						<DESCRIPTION xsi:type="unicode">Reads the first received value of the given signal</DESCRIPTION>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+		<PORT-DESCRIPTOR dkey="MDL01">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="1" xsi:type="toolcaps">
+					<REPRESENTATION xsi:type="integer">3</REPRESENTATION>
+				</PORT-TYPE-ID>
+				<IMPL-TYPE-ID xsi:type="unicode">Standard</IMPL-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">ModelFile</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Model file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">File with model description</DESCRIPTION>
+						<TYPE xsi:type="unicode">uri</TYPE>
+						<VALID-REFS>
+							<ELEMENT xsi:type="unicode">SUT</ELEMENT>
+						</VALID-REFS>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">WriteSignals</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Signals writeable</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Shall writing (manipulation) of signals be possible?</DESCRIPTION>
+						<TYPE xsi:type="unicode">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="unicode">False</ELEMENT>
+							<ELEMENT xsi:type="unicode">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="unicode">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">ModelOnlineQuerySupport</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Support for online model querying</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">(De-)Activates the interface for online querying of model information by the test configuration</DESCRIPTION>
+						<TYPE xsi:type="unicode">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="unicode">False</ELEMENT>
+							<ELEMENT xsi:type="unicode">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="unicode">False</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="unicode">domainProperty</NAME>
+						<DISPLAY-NAME xsi:type="unicode">Property with predefined selections</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="unicode">Translated property with predefined values </DESCRIPTION>
+						<TYPE xsi:type="unicode">string</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="unicode">Action</ELEMENT>
+							<ELEMENT xsi:type="unicode">Evaluation</ELEMENT>
+							<ELEMENT xsi:type="unicode">Translation</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="unicode">Translation</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">JobAB</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">a</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">b</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">JobXYZ</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet">
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">x</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">y</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+							<PARAM xsi:type="propertyDescriptor">
+								<NAME xsi:type="unicode">z</NAME>
+								<TYPE xsi:type="unicode">string</TYPE>
+								<READONLY xsi:type="boolean">False</READONLY>
+							</PARAM>
+						</PARAMETERS>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="unicode">GetSimulatorState</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="unicode">Ermittelt den Simulator-Status</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="unicode">state</NAME>
+							<DISPLAY-NAME xsi:type="unicode">Status</DISPLAY-NAME>
+							<DESCRIPTION xsi:type="unicode">Simulatorstatus: STOPPED, RUNNING</DESCRIPTION>
+							<TYPE xsi:type="unicode">string</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+	</PORT-DESCRIPTORS>
+</TOOLING>

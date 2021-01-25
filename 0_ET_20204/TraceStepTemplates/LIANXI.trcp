@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TRACE-STEP-PROTOTYPE format-rev="2" uuid="b01a5cee503411e9bc06f8a2d6d2ccbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="trcpTimingDiagram">
+	<SIGNALS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="4fa960e1503511e9af83f8a2d6d2ccbc" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Button</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="4fa960e2503511e9b23cf8a2d6d2ccbc" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Reaction</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+	</SIGNALS>
+	<PARAMETERS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="4fa960e3503511e9adfff8a2d6d2ccbc" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">MinMaxSuccessfulInstances</NAME>
+			<DESCRIPTION xsi:type="unicode">Specifies how often the timing diagram must run successfully.
+The value can be a number or a range (two comma-separated values in parentheses).
+For value &quot;None&quot;, the appropriate boundary will not be checked.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">PYOBJECT</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="4fa960e4503511e988e0f8a2d6d2ccbc" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">AllowFailedInstances</NAME>
+			<DESCRIPTION xsi:type="unicode">Specifies if the timing diagram can fail.
+The value has to be a boolean value (True or False).None is also valid here and means False.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">PYOBJECT</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="4fa960e5503511e998bbf8a2d6d2ccbc" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">MaxParallelInstances</NAME>
+			<DESCRIPTION xsi:type="unicode">Maximum number of diagram instances that can be evaluated in parallel. A value &lt;= 0 indicates no limitation.None is also valid here and means 1.</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="4fa960e6503511e9b457f8a2d6d2ccbc" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">time</NAME>
+			<PARAMETER-TYPE xsi:type="string">FLOAT</PARAMETER-TYPE>
+		</PARAMETER>
+	</PARAMETERS>
+	<TDX xsi:type="tdxForEix">
+		<timingDiagram>
+			<version>1.2</version>
+			<timeUnits>SECONDS</timeUnits>
+			<description/>
+			<parameter>
+				<name>time</name>
+				<description/>
+				<type>FLOAT</type>
+			</parameter>
+			<signal precondition="true">
+				<name>Button</name>
+				<description/>
+				<waveForm>
+					<edge id="_1327134088" precondition="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== 0</expression>
+						</state>
+					</edge>
+					<edge id="_1327547616" initial="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== 1</expression>
+						</state>
+					</edge>
+				</waveForm>
+			</signal>
+			<signal>
+				<name>Reaction</name>
+				<description/>
+				<waveForm>
+					<edge id="_1327133864" precondition="true">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>==0</expression>
+						</state>
+					</edge>
+					<edge id="_1328284840">
+						<minSampleCount>1</minSampleCount>
+						<maxSampleCount>...</maxSampleCount>
+						<description/>
+						<state>
+							<expression>== 1</expression>
+						</state>
+					</edge>
+				</waveForm>
+			</signal>
+			<relationship>
+				<minDuration>0</minDuration>
+				<maxDuration>time</maxDuration>
+				<sourceId>_1327547616</sourceId>
+				<targetId>_1328284840</targetId>
+				<description/>
+			</relationship>
+		</timingDiagram>
+	</TDX>
+	<IMAGE-DATA xsi:type="string">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</IMAGE-DATA>
+</TRACE-STEP-PROTOTYPE>

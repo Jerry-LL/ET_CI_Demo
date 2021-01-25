@@ -1,0 +1,824 @@
+-- ****************************************************************************
+--
+--  Trace file: hil.trc
+--
+--  RTI1005 4.5 (05-Aug-2003)
+--  Mon Aug 02 08:39:11 2004
+--
+--  Used options:
+--    TRCGenerateVirtualBlocks      = 1
+--    TRCGenerateLabels             = 1
+--    TRCMaskParameters             = 0
+--    TRCGenerateStates             = 0
+--    TRCGenerateDerivatives        = 0
+--    TRCGenerateApplicationKeyword = 0
+--    EnableRTWCodeReuse            = 0
+--
+--  Trace file format: 2
+--
+--  Copyright (c) 1997-2002 dSPACE GmbH, GERMANY
+--
+-- ****************************************************************************
+
+-- ******** Keywords **********************************************************
+
+-- _application "HiL.map"
+
+_genname     "RTI"
+_genversion  "4.5"
+_gendate     "01/01/2000 08:42:09"
+_description ""
+_author      "RTI1005 4.5 (01-Jan-2000)"
+_model       "HiL.mdl"
+
+-- Default data type formats
+_floating_point_type(64,IEEE)
+_integer_type(32)
+
+-- No Data Capture blocks within model: use base sample time as sampling period
+sampling_period[0]
+{
+  value:       0.001
+  alias:       "HostService"
+  increment:   0.001
+  unit:        "s"
+}
+
+-- Type definitions for arrays
+typedef ArrayDT0_6 flt(64,IEEE)[6]
+typedef ArrayDT0_32 flt(64,IEEE)[32]
+typedef ArrayDT0_11 flt(64,IEEE)[11]
+typedef ArrayDT0_2 flt(64,IEEE)[2]
+typedef ArrayDT0_40 flt(64,IEEE)[40]
+typedef ArrayDT0_3 flt(64,IEEE)[3]
+typedef ArrayDT0_4 flt(64,IEEE)[4]
+typedef ArrayDT0_20 flt(64,IEEE)[20]
+typedef ArrayDT0_7 flt(64,IEEE)[7]
+typedef ArrayDT0_1_11_Col col flt(64,IEEE)[1][11]
+typedef ArrayDT0_24 flt(64,IEEE)[24]
+typedef ArrayDT0_264 flt(64,IEEE)[264]
+typedef ArrayDT0_66 flt(64,IEEE)[66]
+typedef ArrayDT0_12 flt(64,IEEE)[12]
+typedef ArrayDT0_273 flt(64,IEEE)[273]
+typedef ArrayDT0_14 flt(64,IEEE)[14]
+typedef ArrayDT0_10 flt(64,IEEE)[10]
+typedef ArrayDT0_15 flt(64,IEEE)[15]
+typedef ArrayDT0_16 flt(64,IEEE)[16]
+typedef ArrayDT0_13 flt(64,IEEE)[13]
+typedef ArrayDT0_5 flt(64,IEEE)[5]
+typedef ArrayDT0_9 flt(64,IEEE)[9]
+typedef ArrayDT0_8 flt(64,IEEE)[8]
+typedef ArrayDT6_3 int(32)[3]
+typedef ArrayDT7_24 uint(32)[24]
+typedef ArrayDT7_8 uint(32)[8]
+typedef ArrayDT7_2 uint(32)[2]
+typedef ArrayDT8_6 uint(8)[6]
+typedef ArrayDT8_2 uint(8)[2]
+typedef ArrayDT8_3 uint(8)[3]
+typedef ArrayDT0_1_6_Col col flt(64,IEEE)[1][6]
+typedef ArrayDT0_1_2_Col col flt(64,IEEE)[1][2]
+typedef ArrayDT0_1_16_Col col flt(64,IEEE)[1][16]
+typedef ArrayDT0_1_20_Col col flt(64,IEEE)[1][20]
+typedef ArrayDT0_16_1_Col col flt(64,IEEE)[16][1]
+typedef ArrayDT0_20_16_Col col flt(64,IEEE)[20][16]
+typedef ArrayDT0_1_4_Col col flt(64,IEEE)[1][4]
+typedef ArrayDT0_16_16_Col col flt(64,IEEE)[16][16]
+typedef ArrayDT0_1_12_Col col flt(64,IEEE)[1][12]
+typedef ArrayDT0_3_1_Col col flt(64,IEEE)[3][1]
+typedef ArrayDT0_3_3_Col col flt(64,IEEE)[3][3]
+typedef ArrayDT0_12_1_Col col flt(64,IEEE)[12][1]
+typedef ArrayDT0_12_12_Col col flt(64,IEEE)[12][12]
+typedef ArrayDT0_1_70_Col col flt(64,IEEE)[1][70]
+typedef ArrayDT0_1_15_Col col flt(64,IEEE)[1][15]
+typedef ArrayDT0_13_1_Col col flt(64,IEEE)[13][1]
+typedef ArrayDT0_15_13_Col col flt(64,IEEE)[15][13]
+typedef ArrayDT0_1_8_Col col flt(64,IEEE)[1][8]
+typedef ArrayDT0_8_1_Col col flt(64,IEEE)[8][1]
+typedef ArrayDT0_8_8_Col col flt(64,IEEE)[8][8]
+typedef ArrayDT0_2_1_Col col flt(64,IEEE)[2][1]
+typedef ArrayDT0_2_2_Col col flt(64,IEEE)[2][2]
+typedef ArrayDT0_1_130_Col col flt(64,IEEE)[1][130]
+typedef ArrayDT0_10_1_Col col flt(64,IEEE)[10][1]
+typedef ArrayDT0_12_10_Col col flt(64,IEEE)[12][10]
+typedef ArrayDT0_6_13_Col col flt(64,IEEE)[6][13]
+typedef ArrayDT0_1_10_Col col flt(64,IEEE)[1][10]
+typedef ArrayDT0_1_14_Col col flt(64,IEEE)[1][14]
+typedef ArrayDT0_1_9_Col col flt(64,IEEE)[1][9]
+typedef ArrayDT0_1_37_Col col flt(64,IEEE)[1][37]
+typedef ArrayDT0_4_11_Col col flt(64,IEEE)[4][11]
+typedef ArrayDT0_8_2_Col col flt(64,IEEE)[8][2]
+typedef ArrayDT0_1_28_Col col flt(64,IEEE)[1][28]
+typedef ArrayDT0_28_2_Col col flt(64,IEEE)[28][2]
+typedef ArrayDT0_96_1_Col col flt(64,IEEE)[96][1]
+typedef ArrayDT0_4_1_Col col flt(64,IEEE)[4][1]
+typedef ArrayDT0_15_1_Col col flt(64,IEEE)[15][1]
+typedef ArrayDT0_10_15_Col col flt(64,IEEE)[10][15]
+typedef ArrayDT0_1_7_Col col flt(64,IEEE)[1][7]
+typedef ArrayDT0_1_5_Col col flt(64,IEEE)[1][5]
+typedef ArrayDT0_2_5_Col col flt(64,IEEE)[2][5]
+typedef ArrayDT0_5_9_Col col flt(64,IEEE)[5][9]
+typedef ArrayDT0_16_15_Col col flt(64,IEEE)[16][15]
+typedef ArrayDT0_28_1_Col col flt(64,IEEE)[28][1]
+typedef ArrayDT0_14_28_Col col flt(64,IEEE)[14][28]
+typedef ArrayDT0_1_256_Col col flt(64,IEEE)[1][256]
+typedef ArrayDT0_4_12_Col col flt(64,IEEE)[4][12]
+typedef ArrayDT0_5_1_Col col flt(64,IEEE)[5][1]
+typedef ArrayDT0_6_1_Col col flt(64,IEEE)[6][1]
+typedef ArrayDT0_2_6_Col col flt(64,IEEE)[2][6]
+typedef ArrayDT0_1_212_Col col flt(64,IEEE)[1][212]
+typedef ArrayDT0_1_34_Col col flt(64,IEEE)[1][34]
+typedef ArrayDT0_1_44_Col col flt(64,IEEE)[1][44]
+typedef ArrayDT0_1_17_Col col flt(64,IEEE)[1][17]
+typedef ArrayDT0_1_3_Col col flt(64,IEEE)[1][3]
+typedef ArrayDT0_1_21_Col col flt(64,IEEE)[1][21]
+typedef ArrayDT0_1_29_Col col flt(64,IEEE)[1][29]
+typedef ArrayDT0_1_23_Col col flt(64,IEEE)[1][23]
+typedef ArrayDT0_1_13_Col col flt(64,IEEE)[1][13]
+typedef ArrayDT0_15_11_Col col flt(64,IEEE)[15][11]
+typedef ArrayDT0_15_4_Col col flt(64,IEEE)[15][4]
+typedef ArrayDT0_15_12_Col col flt(64,IEEE)[15][12]
+typedef ArrayDT0_15_6_Col col flt(64,IEEE)[15][6]
+typedef ArrayDT0_15_8_Col col flt(64,IEEE)[15][8]
+typedef ArrayDT0_15_3_Col col flt(64,IEEE)[15][3]
+typedef ArrayDT0_1_31_Col col flt(64,IEEE)[1][31]
+typedef ArrayDT0_1_25_Col col flt(64,IEEE)[1][25]
+typedef ArrayDT6_3_1_Col col int(32)[3][1]
+typedef ArrayDT0_2048 flt(64,IEEE)[2048]
+typedef ArrayDT10_3 int(32)[3]
+typedef ArrayDT10_6 int(32)[6]
+typedef ArrayDT10_2 int(32)[2]
+typedef ArrayDT0_22 flt(64,IEEE)[22]
+typedef ArrayDT0_160 flt(64,IEEE)[160]
+typedef ArrayDT0_18 flt(64,IEEE)[18]
+typedef ArrayDT0_35 flt(64,IEEE)[35]
+
+
+-- ******** Simulation control variables **************************************
+
+finalTime
+{
+ type:  flt(64,IEEE)*
+ alias: "finalTime"
+ desc:  "Simulation stop time. When reached, simState switches to STOP."
+ flags:  SYSTEM|READONLY
+ unit:  "s"
+}
+
+currentTime
+{
+ type:  flt(64,IEEE)*
+ alias: "currentTime"
+ desc:  "Current simulation time. Increments with execution of Timer Task 1."
+ flags: SYSTEM|READONLY
+ unit:  "s"
+}
+
+modelStepSize
+{
+ type:  flt(64,IEEE)
+ alias: "modelStepSize"
+ desc:  "Fixed step size of the model, sample time of Timer Task 1."
+ flags: SYSTEM|READONLY
+ unit:  "s"
+}
+
+simState
+{
+ type:  int(32)
+ alias: "simState"
+ desc:  "Simulation state: STOP=0 PAUSE=1 RUN=2"
+ flags: SYSTEM
+ unit:  "-"
+}
+
+msg_last_error_no
+{
+ type:  uint(32)
+ alias: "errorNumber"
+ desc:  "Error number of last error message (zero if no error)."
+ unit:  "-"
+ flags: SYSTEM|READONLY
+}
+
+rtiAssertionMode
+{
+ type:  int(32)
+ alias: "rtiAssertionMode"
+ desc:  "Assertion Mode: OFF=0 WARN=1 STOP=2"
+ flags: SYSTEM
+ unit:  "-"
+}
+
+
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+{
+ flags: COLLAPSED
+}
+
+	group "ctrl_veh" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc: ""
+	}
+
+		group "driverrequest [%]" -- block-group
+		{
+		 block: "Constant"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			p_rtP_real_T_0[6457]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+		endgroup -- block-group "driverrequest [%]"
+
+		group "starterbutton [-1|0|1]" -- block-group
+		{
+		 block: "Constant"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			p_rtP_uint32_T_2[11]
+			{
+			 type:    uint(32)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+		endgroup -- block-group "starterbutton [-1|0|1]"
+		
+		group "drivemode [0|1|2|3|4]" -- block-group
+        {
+         block: "Constant"
+         flags: BLOCK|COLLAPSED
+        }
+
+            p_rtP_uint32_T_2[11]
+            {
+             type:    uint(32)*
+             alias:   "Value"
+             flags:   PARAM
+            }
+
+        endgroup -- block-group "drivemode [0|1|2|3|4]"
+
+		group "bakepedal [%]" -- block-group
+		{
+		 block: "Constant"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			p_rtP_uint32_T_2[11]
+			{
+			 type:    uint(32)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+		endgroup -- block-group "bakepedal [%]"
+		
+	endgroup -- subsystem-group "ctrl_veh"
+
+
+  	group "status_veh" -- subsystem-group
+	{
+	 flags: COLLAPSED
+	 desc: ""
+	}
+
+		group "enginespeed [rpm]" -- block-group
+		{
+		 block: "Scope"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			 p_rtB_real_T_0[36]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "In1"
+			 flags:   SINK|READONLY
+			}
+
+        endgroup -- block-group "enginespeed [rpm]"
+
+        group "vehicletractionstandby [0|1]" -- block-group
+		{
+		 block: "Scope"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			 p_rtB_real_T_0[36]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "In1"
+			 flags:   SINK|READONLY
+			}
+
+        endgroup -- block-group "vehicletractionstandby [0|1]"
+
+		group "vehiclevelocity [kmh]" -- block-group
+		{
+		 block: "Scope"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			 p_rtB_real_T_0[36]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "In1"
+			 flags:   SINK|READONLY
+			}
+
+        endgroup -- block-group "vehiclevelocity [kmh]"
+
+        group "recuperation [0|1]" -- block-group
+        {
+         block: "Scope"
+         flags: BLOCK|COLLAPSED
+        }
+
+             p_rtB_real_T_0[36]
+            {
+             type:    flt(64,IEEE)*
+             alias:   "In1"
+             flags:   SINK|READONLY
+            }
+
+        endgroup -- block-group "recuperation [0|1]"
+
+	endgroup -- subsystem-group "status_veh"
+
+    group "status_bat"  -- subsystem-group
+    {
+     flags: COLLAPSED
+	 desc: ""
+    }
+
+        group "stateofhealth [%]" -- block-group
+		{
+		 block: "Scope"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			p_rtP_real_T_0[6457]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+		endgroup -- block-group "stateofhealth [%]"
+
+		group "stateofcharge [%]" -- block-group
+		{
+		 block: "Scope"
+		 flags: BLOCK|COLLAPSED
+		}
+
+			p_rtP_real_T_0[6457]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+		endgroup -- block-group "stateofcharge [%]"
+
+    endgroup -- subsystem-group "status_bat"
+
+    group "status_warnings"  -- subsystem-group
+    {
+     flags: COLLAPSED
+     desc: ""
+    }
+
+        group "chargingcable [0|1]" -- block-group
+        {
+         block: "Scope"
+         flags: BLOCK|COLLAPSED
+        }
+
+            p_rtP_real_T_0[6457]
+            {
+             type:    flt(64,IEEE)*
+             alias:   "Value"
+             flags:   PARAM
+            }
+
+        endgroup -- block-group "chargingcable [0|1]"
+
+        group "dooropen [0|1]" -- block-group
+        {
+         block: "Scope"
+         flags: BLOCK|COLLAPSED
+        }
+
+            p_rtP_real_T_0[6457]
+            {
+             type:    flt(64,IEEE)*
+             alias:   "Value"
+             flags:   PARAM
+            }
+
+        endgroup -- block-group "dooropen [0|1]"
+
+    endgroup -- subsystem-group "status_warnings"
+   
+    group "clamps"  -- subsystem-group
+    {
+     flags: COLLAPSED
+     desc: ""
+    }
+
+        group "clamp15 [0|1]" -- block-group
+        {
+         block: "Scope"
+         flags: BLOCK|COLLAPSED
+        }
+
+            p_rtP_real_T_0[6457]
+            {
+             type:    flt(64,IEEE)*
+             alias:   "Value"
+             flags:   PARAM
+            }
+
+        endgroup -- block-group "clamp15 [0|1]"
+
+        group "clamp30 [0|1]" -- block-group
+        {
+         block: "Scope"
+         flags: BLOCK|COLLAPSED
+        }
+
+            p_rtP_real_T_0[6457]
+            {
+             type:    flt(64,IEEE)*
+             alias:   "Value"
+             flags:   PARAM
+            }
+
+        endgroup -- block-group "clamp30 [0|1]"
+
+    endgroup -- subsystem-group "clamps"
+
+endgroup
+
+-- ******** Task Information variables ****************************************
+
+group "Task Info"
+{
+ flags: COLLAPSED
+}
+  group "Timer Task 1"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_TIMERA_STime
+  {
+   type:  flt(64,IEEE)*
+   alias: "sampleTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: SYSTEM|READONLY
+  }
+  endgroup
+
+  group "Timer Task 2"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_TIMERA2_STime
+  {
+   type:  flt(64,IEEE)*
+   alias: "sampleTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_TIMERA2_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: SYSTEM|READONLY
+  }
+  endgroup
+
+  group "DS2210CAN_INT_B1_C1"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_C0CAN1_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN1_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN1_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN1_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN1_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN1_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN1_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN1_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: SYSTEM|READONLY
+  }
+  endgroup
+
+  group "DS4302CAN_INT_B1_C3"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_C0CAN3_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN3_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN3_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN3_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN3_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN3_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN3_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN3_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: SYSTEM|READONLY
+  }
+  endgroup
+
+  group "DS4302CAN_INT_B1_C4"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_C0CAN2_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN2_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN2_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN2_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN2_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN2_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN2_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_C0CAN2_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: SYSTEM|READONLY
+  }
+  endgroup
+
+  group "Hardware Interrupt"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_2210B1I0_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: SYSTEM|READONLY
+  }
+  pRti_2210B1I0_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: SYSTEM|READONLY
+  }
+  pRti_2210B1I0_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: SYSTEM|READONLY
+  }
+  pRti_2210B1I0_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: SYSTEM|READONLY
+  }
+  pRti_2210B1I0_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_2210B1I0_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_2210B1I0_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: SYSTEM|READONLY
+  }
+  pRti_2210B1I0_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: SYSTEM|READONLY
+  }
+  endgroup
+
+endgroup
+
+
+-- ******** [EOF] *************************************************************

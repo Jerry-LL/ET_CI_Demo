@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TRACE-STEP-PROTOTYPE format-rev="1" uuid="28967411327511e6b84efcf8aeb9b2bf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="trcpEventPythonII">
+	<SIGNALS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="2ffa6400327511e6a099fcf8aeb9b2bf" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Button</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+		<PARAMETER uuid="366cef0f327511e6b399fcf8aeb9b2bf" xsi:type="signalDescription">
+			<NAME xsi:type="unicode">Reaction</NAME>
+			<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+		</PARAMETER>
+	</SIGNALS>
+	<PARAMETERS xsi:type="trcpParameterDescriptionList">
+		<PARAMETER uuid="87610bc0327711e693d2fcf8aeb9b2bf" xsi:type="parameterDescription">
+			<NAME xsi:type="unicode">timeout</NAME>
+			<DESCRIPTION xsi:type="unicode">in seconds</DESCRIPTION>
+			<PARAMETER-TYPE xsi:type="string">INTEGER</PARAMETER-TYPE>
+		</PARAMETER>
+	</PARAMETERS>
+	<INIT-FUNCTION xsi:type="pyFunctionII">
+		<NAME xsi:type="unicode">Init</NAME>
+		<PARAMETER-NAMES/>
+		<CODE xsi:type="pyCode">
+			<SOURCE xsi:type="unicode">#Funktionskopf generiert, nicht editieren!
+def Init(dataContainer, parameters, report):
+    dataContainer.timeButtonPressed = -1
+    dataContainer.timeReactionHappened = float(&quot;inf&quot;)
+</SOURCE>
+		</CODE>
+	</INIT-FUNCTION>
+	<FINALIZE-FUNCTION xsi:type="pyFunctionII">
+		<NAME xsi:type="unicode">Finalize</NAME>
+		<PARAMETER-NAMES/>
+		<CODE xsi:type="pyCode">
+			<SOURCE xsi:type="unicode">#Funktionskopf generiert, nicht editieren!
+def Finalize(dataContainer, parameters, report):
+    if dataContainer.timeButtonPressed != -1:
+        report.Spot(dataContainer.timeThresholdExceeded, &quot;Button pressed first&quot;)
+    if dataContainer.timeReactionHappened != float(&quot;inf&quot;):
+        report.Spot(dataContainer.timeReactionHappened, &quot;Reaction happened&quot;)
+        
+    if dataContainer.timeReactionHappened - parameters[&quot;timeout&quot;] &lt;= dataContainer.timeButtonPressed:
+        #resultId = report.RESULT_ID_SUCCESS
+        report.SetResultSuccess()
+    else:
+        #resultId = report.RESULT_ID_FAILED
+        report.SetResultFailed()
+            
+    table = report.Table(&quot;table1&quot;, [&quot;reactionTime&quot;])
+    table.AddRow([&quot;{}&quot;.format(dataContainer.timeReactionHappened - dataContainer.timeButtonPressed)])
+</SOURCE>
+		</CODE>
+	</FINALIZE-FUNCTION>
+	<FUNCTIONS>
+		<ELEMENT xsi:type="pyEventFunctionII">
+			<NAME xsi:type="unicode">LogButtonPressed</NAME>
+			<PARAMETER-NAMES/>
+			<CODE xsi:type="pyCode">
+				<SOURCE xsi:type="unicode">#Funktionskopf generiert, nicht editieren!
+def LogButtonPressed(event, hold, dataContainer, parameters, report):
+    if dataContainer.timeButtonPressed == -1:
+        value = event.GetValue(&quot;Button&quot;)
+        if value == 1:
+            dataContainer.timeButtonPressed = event.GetTime()
+</SOURCE>
+			</CODE>
+			<SIGNAL-NAMES>
+				<ELEMENT xsi:type="unicode">Button</ELEMENT>
+			</SIGNAL-NAMES>
+		</ELEMENT>
+		<ELEMENT xsi:type="pyEventFunctionII">
+			<NAME xsi:type="unicode">LogReactionHappened</NAME>
+			<PARAMETER-NAMES/>
+			<CODE xsi:type="pyCode">
+				<SOURCE xsi:type="unicode">#Funktionskopf generiert, nicht editieren!
+def LogReactionHappened(event, hold, dataContainer, parameters, report):
+    if dataContainer.timeReactionHappened == float(&quot;inf&quot;):
+        value = event.GetValue(&quot;Reaction&quot;)
+        if value == 1:
+            dataContainer.timeReactionHappened = event.GetTime()
+
+</SOURCE>
+			</CODE>
+			<SIGNAL-NAMES>
+				<ELEMENT xsi:type="unicode">Reaction</ELEMENT>
+			</SIGNAL-NAMES>
+		</ELEMENT>
+	</FUNCTIONS>
+</TRACE-STEP-PROTOTYPE>

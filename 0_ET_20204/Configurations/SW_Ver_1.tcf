@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIGURATION format-rev="6" prog-version="7.2.0.79918" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON xsi:type="commonData">
+		<HOST xsi:type="unicode">Jerry</HOST>
+		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
+	</COMMON>
+	<REPORT format-rev="4" xsi:type="reportData">
+		<REPORT-FORMATES>
+			<ELEMENT format-rev="1" xsi:type="reportFormat">
+				<FORMAT-NAME xsi:type="unicode">HTML complete, separate package files</FORMAT-NAME>
+				<HANDLER-NAME xsi:type="unicode">HTML</HANDLER-NAME>
+				<FILTERS xsi:type="apiFilter"/>
+			</ELEMENT>
+		</REPORT-FORMATES>
+		<INCLUDE-APPLICATION-LOGS xsi:type="boolean">True</INCLUDE-APPLICATION-LOGS>
+	</REPORT>
+	<EXECUTION-DATA format-rev="1" xsi:type="executionData"/>
+	<GLOBAL-CONSTANTS xsi:type="globalConstData">
+		<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+			<NAME xsi:type="unicode">version</NAME>
+			<VALUE format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">1</VALUE>
+			</VALUE>
+		</GLOBAL-CONSTANT>
+	</GLOBAL-CONSTANTS>
+	<MODEL-ACCESS format-rev="1" xsi:type="modelAccessData">
+		<DATA dkey="Plant model">
+			<DVALUE format-rev="1" xsi:type="modelData">
+				<MODEL-DATA-SOURCE xsi:type="integer">0</MODEL-DATA-SOURCE>
+				<MODEL-ACCESS-PORT xsi:type="unicode">MDL01</MODEL-ACCESS-PORT>
+				<MODEL-FILE xsi:type="unicode">EV_HV_HiL.sdf</MODEL-FILE>
+				<MODEL-POSITION xsi:type="integer">1</MODEL-POSITION>
+			</DVALUE>
+		</DATA>
+	</MODEL-ACCESS>
+	<ECU-ACCESS format-rev="1" xsi:type="ecuAccessData">
+		<DATA dkey="Battery-Control">
+			<DVALUE format-rev="1" xsi:type="ecuData">
+				<APPLICATION-PORT xsi:type="unicode">APL02</APPLICATION-PORT>
+				<A2L-FILE xsi:type="unicode">ECU_Data\Battery-Control.a2l</A2L-FILE>
+				<ECU-POSITION xsi:type="integer">2</ECU-POSITION>
+			</DVALUE>
+		</DATA>
+		<DATA dkey="Engine-Control">
+			<DVALUE format-rev="1" xsi:type="ecuData">
+				<APPLICATION-PORT xsi:type="unicode">APL01</APPLICATION-PORT>
+				<A2L-FILE xsi:type="unicode">ECU_Data\Engine-Control.a2l</A2L-FILE>
+				<ECU-POSITION xsi:type="integer">1</ECU-POSITION>
+			</DVALUE>
+		</DATA>
+	</ECU-ACCESS>
+	<BUS-ACCESS format-rev="1" xsi:type="busAccessData">
+		<DATA dkey="EPT-CAN">
+			<DVALUE xsi:type="busData">
+				<BUS-ACCESS-PORT-ACTIVENODE xsi:type="unicode">BUS01</BUS-ACCESS-PORT-ACTIVENODE>
+				<BUS-ACCESS-PORT-SIMULATION xsi:type="unicode">BUS01</BUS-ACCESS-PORT-SIMULATION>
+				<BUS-ACCESS-PORT-MONITORING xsi:type="unicode">BUS01</BUS-ACCESS-PORT-MONITORING>
+				<DATABASE xsi:type="unicode">Bus\Electric_V1.DBC</DATABASE>
+				<BUS-POSITION xsi:type="integer">1</BUS-POSITION>
+			</DVALUE>
+		</DATA>
+	</BUS-ACCESS>
+</CONFIGURATION>

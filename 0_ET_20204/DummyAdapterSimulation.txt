@@ -1,0 +1,39 @@
+########!SIGNALDESCRIPTIONS!########
+Description: ((<triggerVarPath>, <operation>, <triggerValue>),      <WS-relative Path to STI>,              [<signal names to simulate and in STI !HAVE TO BE IDENTICAL!>])
+
+Trigger: (("", "==", 0.0),                                       "_Simulation\\start.sti",                  ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED", "BATTERY_DISCHARGE", "BATTERY_HEALTH",  "VEHICLE_TRACTION_STANDBY_FTC", "VEHICLE_TRACTION_STANDBY_TCD", "VEHICLE_TRACTION_STANDBY_MEAS", "RECUPERATION"])
+Trigger: (("STARTER_BUTTON", "==", 1),                           "_Simulation\\starterButton.sti",          ["VEHICLE_TRACTION_STANDBY_TCD", "VEHICLE_TRACTION_STANDBY_MEAS"])
+Trigger: (("STARTER_BUTTON", "==", -1),                          "_Simulation\\stop.sti",                   ["VEHICLE_TRACTION_STANDBY_TCD", "VEHICLE_TRACTION_STANDBY_MEAS"]) 
+Trigger: (("DRIVER_REQUEST", ">", 1),                            "_Simulation\\acceleration_1.sti",         ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED"])
+Trigger: (("DRIVER_REQUEST", ">", 10),                           "_Simulation\\acceleration_10.sti",        ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED"])
+Trigger: (("DRIVER_REQUEST", ">", 15),                           "_Simulation\\acceleration_20.sti",        ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED"])
+Trigger: (("DRIVER_REQUEST", ">", 24),                           "_Simulation\\acceleration_50.sti",        ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED"])
+Trigger: (("DRIVER_REQUEST", ">", 54),                           "_Simulation\\acceleration_80.sti",        ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED"])
+Trigger: (("DRIVER_REQUEST", ">", 94),                           "_Simulation\\acceleration_100.sti",       ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED"])
+Trigger: (("DRIVER_REQUEST", ">", 1),                            "_Simulation\\battery_1.sti",              ["BATTERY_DISCHARGE"])
+Trigger: (("DRIVER_REQUEST", ">", 10),                           "_Simulation\\battery_10.sti",             ["BATTERY_DISCHARGE"])
+Trigger: (("DRIVER_REQUEST", ">", 15),                           "_Simulation\\battery_20.sti",             ["BATTERY_DISCHARGE"])
+Trigger: (("DRIVER_REQUEST", ">", 24),                           "_Simulation\\battery_50.sti",             ["BATTERY_DISCHARGE"])
+Trigger: (("DRIVER_REQUEST", ">", 54),                           "_Simulation\\battery_80.sti",             ["BATTERY_DISCHARGE"])
+Trigger: (("DRIVER_REQUEST", ">", 94),                           "_Simulation\\battery_100.sti",            ["BATTERY_DISCHARGE"])
+Trigger: (("DRIVER_REQUEST", "==", 0),                           "_Simulation\\deceleration_mid.sti",       ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED", "RECUPERATION"])
+Trigger: (("BRAKE_PEDAL", ">", 21),                              "_Simulation\\brake.sti",                  ["VEHICLE_VELOCITY", "VEHICLE_VELOCITY_BUS", "VEHICLE_SPEED", "RECUPERATION"])
+Trigger: (("CABLE", "==", 1),                                    "_Simulation\\switchToZeroCable.sti",      ["VEHICLE_TRACTION_STANDBY_TCD", "VEHICLE_TRACTION_STANDBY_MEAS"])
+Trigger: (("DOOR", "==", 1),                                     "_Simulation\\switchToZeroDoor.sti",       ["VEHICLE_TRACTION_STANDBY_TCD", "VEHICLE_TRACTION_STANDBY_MEAS"])
+
+
+########!SIGNALMAPPINGS!########
+Mapping: {"DRIVER_REQUEST":                ("Model Easy/CTRL_VEH/DriverRequest [%]/Value", "Model Root/CTRL_VEH/DriverRequest [%]/Value", "Model Root/ctrl_veh/driverrequest [%]/Value")}
+Mapping: {"BATTERY_DISCHARGE":             ("Model Root/STATUS_BAT/StateOfCharge [%]/Value", "SoC", "BATTERY_UNIT/STATE/STATE/STATE_OF_CHARGE", "STATE.STATE_OF_CHARGE", "Model Root/status_bat/stateofcharge [%]/Value")}
+Mapping: {"VEHICLE_VELOCITY":              ("speed", "Model Root/STATUS_VEH/VehicleVelocity [kmh]/In1", "Model Root/status_veh/vehiclevelocity [kmh]/In1")}
+Mapping: {"VEHICLE_VELOCITY_BUS":          ("ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_VELOCITY", "VEH_DATA.VEHICLE_VELOCITY")}
+Mapping: {"VEHICLE_SPEED":                 ("ELECTRIC_POWER_TRAIN/VEH_DATA/VEH_DATA/VEHICLE_SPEED", "VEH_DATA.VEHICLE_SPEED")}
+Mapping: {"VEHICLE_TRACTION_STANDBY_FTC":  ("Model Easy/STATUS_VEH/VehicleTractionStandby [0|1]/In1",)}
+Mapping: {"VEHICLE_TRACTION_STANDBY_TCD":  ("Model Root/STATUS_VEH/VehicleTractionStandby [0|1]/In1", "Model Root/status_veh/vehicletractionstandby [0|1]/In1")}
+Mapping: {"VEHICLE_TRACTION_STANDBY_MEAS": ("VehTrStby",)}
+Mapping: {"STARTER_BUTTON":                ("Model Root/CTRL_VEH/StarterButton [-1|0|1]/Value", "Model Root/ctrl_veh/starterbutton [-1|0|1]/Value")}
+Mapping: {"BRAKE_PEDAL":                   ("Model Root/CTRL_VEH/BrakePedal [%]/Value", "Model Root/ctrl_veh/bakepedal [%]/Value")}
+Mapping: {"BATTERY_HEALTH":                ("Model Root/STATUS_BAT/StateOfHealth [%]/Value", "SoH", "BATTERY_UNIT/STATE/STATE/STATE_OF_HEALTH", "STATE.STATE_OF_HEALTH","Model Root/status_bat/stateofhealth [%]/Value")}
+Mapping: {"CABLE":                         ("Model Root/STATUS_WARNINGS/ChargingCable [0|1]/Value", "CABLE_BUS_TARGET", "CABLE_BUSDOT_TARGET")}
+Mapping: {"DOOR":                          ("Model Root/STATUS_WARNINGS/DoorOpen [0|1]/Value", "DOOR_BUS_TARGET",)}
+Mapping: {"RECUPERATION":                  ("Model Root/STATUS_VEH/Recuperation [0|1]/In1", "Model Root/status_veh/recuperation [0|1]/In1", "recup")}
