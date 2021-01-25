@@ -4,13 +4,13 @@ pipeline {
    stages {
       stage('Hello') {
          steps {
-            echo 'Hello World！！'
+            echo 'Hello World！'
             echo 'Hello ECU-TEST Support China!'
          }
       }
       stage('Start ECU-TEST') {
          steps{
-            startET toolName: 'ECU-TEST 2020.4', workspaceDir: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204'
+            startET toolName: 'ECU-TEST 2020.4', workspaceDir: 'C:\\Users\\Jerry\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204'
          }
       }
       stage('Run Package') {
