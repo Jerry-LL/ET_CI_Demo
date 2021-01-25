@@ -1,0 +1,52 @@
+
+
+= 25.01.2021 22:35:46 (UTC +8:00) === ECU-TEST 2020.4.105605+9fffb455971e 105605+9fffb455971e (2020/11/20 15:35:03) (64bit) ===
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2021.4
+         - valid until: 31-dec-2021
+         - licensed for: TURING
+         - Server: Jerry
+
+
+2021-01-25 22:35:46.327 19524 ManagedWorker-7*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2021-01-25 22:35:46.353 19524 ManagedWorker-7*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2021-01-25 22:35:46.357 19524 ManagedWorker-7*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2021-01-25 22:35:46.360 19524 ManagedWorker-7*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2021-01-25 22:35:46.384 19524 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2021-01-25 22:35:46.441 19524 ManagedWorker-7*PE.Run() INFO:
+                        System time mode activated
+2021-01-25 22:35:46.444 19524 ManagedWorker-7*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "C:\Users\Jerry\Documents\GitHub\testECU-TEST\3_ET_20204\Packages\BasicDrive.pkg"#0
+2021-01-25 22:35:46.446 19524 ManagedWorker-7*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+                        Package "C:\Users\Jerry\Documents\GitHub\testECU-TEST\3_ET_20204\Packages\BasicDrive.pkg"#0
+2021-01-25 22:36:08.789 19524 ManagedWorker-7*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "C:\Users\Jerry\Documents\GitHub\testECU-TEST\3_ET_20204\Packages\BasicDrive.pkg"#0
+2021-01-25 22:36:08.793 19524 ManagedWorker-7*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+                        Package "C:\Users\Jerry\Documents\GitHub\testECU-TEST\3_ET_20204\Packages\BasicDrive.pkg"#0
+2021-01-25 22:36:08.803 19524 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2021-01-25 22:36:09.557 19524 ManagedWorker-7*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2021-01-25 22:36:10.086 19524 ManagedWorker-7*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\Users\Jerry\Documents\GitHub\testECU-TEST\3_ET_20204\Packages\BasicDrive.pkg" -> "Basic Drive")
+2021-01-25 22:36:10.168 19524 ManagedWorker-7*PE.Run() DEBUG:
+                        performing trace analysis session ...
+2021-01-25 22:36:10.170 19524 ManagedWorker-7*PE.Run() DEBUG:
+                        
+2021-01-25 22:36:10.745 19524 ManagedWorker-7*PE.Run() DEBUG:
+                        end of trace analysis session
+2021-01-25 22:36:10.747 19524 ManagedWorker-7*PE.Run() DEBUG:
+                        
