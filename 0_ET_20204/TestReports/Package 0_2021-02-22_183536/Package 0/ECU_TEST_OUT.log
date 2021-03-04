@@ -1,0 +1,26 @@
+
+
+= 22.02.2021 18:35:37 (UTC +8:00) === ECU-TEST 2020.4.105605+9fffb455971e 105605+9fffb455971e (2020/11/20 15:35:03) (64bit) ===
+= Applied Patches:
+                   1612512503. Patches - TTS-20913__CarSim_Writing_table_parameters_2020_4
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2021.4
+         - valid until: 31-dec-2021
+         - licensed for: TURING
+         - Server: Jerry
+
+
+2021-02-22 18:35:37.138 12820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" started
+2021-02-22 18:35:37.142 12820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2021-02-22 18:35:37.153 12820 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2021-02-22 18:35:43.799 12820 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2021-02-22 18:35:43.802 12820 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" completed
