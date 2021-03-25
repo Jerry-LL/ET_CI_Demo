@@ -356,7 +356,7 @@
 						<ELEMENT xsi:type="integer">1936</ELEMENT>
 						<ELEMENT xsi:type="integer">1056</ELEMENT>
 					</WIN-RECT>
-					<DEFAULT xsi:type="string">layout2|name=masterMappingView;caption=Global mapping;state=2131967;dir=4;layer=0;row=0;pos=0;prop=179898;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=237;floaty=327;floatw=400;floath=250|name=pnlMappingSet;caption=KWC test values mapping;state=2131454;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=txtLog;caption=Messages;state=2099196;dir=4;layer=0;row=0;pos=2;prop=141188;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=editorNotebook;caption=Editor;state=4196348;dir=5;layer=3;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=18176;dir=4;layer=0;row=0;pos=0;prop=375738;bestw=300;besth=150;minw=300;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=0;row=0;pos=1;prop=100000;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=constantMonitor;caption=Global constants;state=2131967;dir=4;layer=0;row=0;pos=2;prop=179898;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,0,0)=338|dock_size(5,3,0)=198|</DEFAULT>
+					<DEFAULT xsi:type="string">layout2|name=masterMappingView;caption=Global mapping;state=2131967;dir=4;layer=0;row=0;pos=0;prop=179898;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=237;floaty=327;floatw=400;floath=250|name=pnlMappingSet;caption=KWC test values mapping;state=2131454;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=txtLog;caption=Messages;state=2115580;dir=4;layer=0;row=0;pos=2;prop=141188;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=editorNotebook;caption=Editor;state=4196348;dir=5;layer=3;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=1792;dir=4;layer=0;row=0;pos=0;prop=375738;bestw=300;besth=150;minw=300;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=0;row=0;pos=1;prop=100000;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=constantMonitor;caption=Global constants;state=2131967;dir=4;layer=0;row=0;pos=2;prop=179898;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,0,0)=335|dock_size(5,3,0)=198|</DEFAULT>
 					<PACKAGE-SWK xsi:type="string"/>
 					<TEST-CASE-COLUMN-WIDTH>
 						<ELEMENT xsi:type="integer">60</ELEMENT>
@@ -1058,7 +1058,16 @@
 		<DATAVIEWER-SERVICE-LAYOUT xsi:type="dvServiceLayout">
 			<SHOW-NODES xsi:type="boolean">True</SHOW-NODES>
 		</DATAVIEWER-SERVICE-LAYOUT>
-		<VARIABLE-EDITOR-LAYOUT format-rev="2" xsi:type="variableEditorLayout"/>
+		<VARIABLE-EDITOR-LAYOUT format-rev="2" xsi:type="variableEditorLayout">
+			<DIALOG-CONTAINER dkey="BaseValueEditor">
+				<DVALUE xsi:type="rectangle">
+					<X-POS xsi:type="integer">946</X-POS>
+					<Y-POS xsi:type="integer">363</Y-POS>
+					<WIDTH xsi:type="integer">370</WIDTH>
+					<HEIGHT xsi:type="integer">400</HEIGHT>
+				</DVALUE>
+			</DIALOG-CONTAINER>
+		</VARIABLE-EDITOR-LAYOUT>
 		<TRCP-EXPLORER-LAYOUT xsi:type="trcpbrowserLayout">
 			<OWNTEMPLATES-EXPLORER-ISSHOWN xsi:type="boolean">True</OWNTEMPLATES-EXPLORER-ISSHOWN>
 			<STANDARDTEMPLATES-EXPLORER-ISSHOWN xsi:type="boolean">True</STANDARDTEMPLATES-EXPLORER-ISSHOWN>
