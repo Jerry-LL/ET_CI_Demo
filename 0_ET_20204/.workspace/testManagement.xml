@@ -1,2 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TESTMANAGEMENT-SETTINGS format-rev="3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<TESTMANAGEMENT-SETTINGS format-rev="3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CONFIGURATIONS>
+		<ELEMENT format-rev="1" xsi:type="tmsConfiguration">
+			<ADAPTER-NAME xsi:type="string">PTC Integrity</ADAPTER-NAME>
+			<ADAPTER-SETTINGS>
+				<ELEMENT dkey="Configuration">
+					<DVALUE xsi:type="string">&lt;default&gt;</DVALUE>
+				</ELEMENT>
+				<ELEMENT dkey="Host">
+					<DVALUE xsi:type="string"/>
+				</ELEMENT>
+				<ELEMENT dkey="Port">
+					<DVALUE xsi:type="string">7001</DVALUE>
+				</ELEMENT>
+				<ELEMENT dkey="Upload-Status">
+					<DVALUE xsi:type="string"/>
+				</ELEMENT>
+			</ADAPTER-SETTINGS>
+			<EXPORT_REPORT_SETTINGS xsi:type="exportReportSettings">
+				<GENERATOR-NAME xsi:type="string"/>
+			</EXPORT_REPORT_SETTINGS>
+			<PROXY_SETTINGS xsi:type="tmsProxySettings">
+				<FLAG_PROXY_SELECTION xsi:type="integer">1</FLAG_PROXY_SELECTION>
+			</PROXY_SETTINGS>
+			<CONFIGURATION-NAME xsi:type="string">New configuration</CONFIGURATION-NAME>
+			<KEYSTORE xsi:type="integer">2</KEYSTORE>
+			<USER-HOOKS xsi:type="tmsUserHookSettings"/>
+			<VERDICT-MAPPING-COLLECTION format-rev="1" xsi:type="VerdictMappingCollection">
+				<VERDICT-MAPPINGS>
+					<ELEMENT xsi:type="VerdictMapping">
+						<ET-VERDICT xsi:type="string">NONE</ET-VERDICT>
+						<TM-VERDICTS>
+							<ELEMENT xsi:type="string">OTHER</ELEMENT>
+						</TM-VERDICTS>
+					</ELEMENT>
+					<ELEMENT xsi:type="VerdictMapping">
+						<ET-VERDICT xsi:type="string">SUCCESS</ET-VERDICT>
+						<TM-VERDICTS>
+							<ELEMENT xsi:type="string">PASS</ELEMENT>
+						</TM-VERDICTS>
+					</ELEMENT>
+					<ELEMENT xsi:type="VerdictMapping">
+						<ET-VERDICT xsi:type="string">INCONCLUSIVE</ET-VERDICT>
+						<TM-VERDICTS>
+							<ELEMENT xsi:type="string">OTHER</ELEMENT>
+						</TM-VERDICTS>
+					</ELEMENT>
+					<ELEMENT xsi:type="VerdictMapping">
+						<ET-VERDICT xsi:type="string">FAILED</ET-VERDICT>
+						<TM-VERDICTS>
+							<ELEMENT xsi:type="string">FAIL</ELEMENT>
+						</TM-VERDICTS>
+					</ELEMENT>
+					<ELEMENT xsi:type="VerdictMapping">
+						<ET-VERDICT xsi:type="string">ERROR</ET-VERDICT>
+						<TM-VERDICTS>
+							<ELEMENT xsi:type="string">FAIL</ELEMENT>
+						</TM-VERDICTS>
+					</ELEMENT>
+				</VERDICT-MAPPINGS>
+				<EXECUTION-STATE-VERDICTS>
+					<ELEMENT xsi:type="ExecutionStateVerdicts">
+						<STATE-NAME xsi:type="string">PRECONDITION</STATE-NAME>
+						<TM-VERDICTS>
+							<ELEMENT xsi:type="string">FAIL</ELEMENT>
+						</TM-VERDICTS>
+					</ELEMENT>
+				</EXECUTION-STATE-VERDICTS>
+			</VERDICT-MAPPING-COLLECTION>
+		</ELEMENT>
+	</CONFIGURATIONS>
+	<ACTIVE-CONFIGURATION-NAME xsi:type="string">New configuration</ACTIVE-CONFIGURATION-NAME>
+</TESTMANAGEMENT-SETTINGS>

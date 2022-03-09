@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <INTERACTIVE-EXECUTION-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<INTERACTIVE-EXECUTION xsi:type="interactiveExecution">
+		<VOICE-ID-GERMAN xsi:type="string">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0</VOICE-ID-GERMAN>
+		<VOICE-ID-ENGLISH xsi:type="string">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_ZH-CN_HUIHUI_11.0</VOICE-ID-ENGLISH>
 		<COMMON-SHORTCUTS>
 			<ELEMENT dkey="HK_00_EVAL_NONE">
 				<DVALUE xsi:type="shortcut">
