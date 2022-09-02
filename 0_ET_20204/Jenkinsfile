@@ -15,7 +15,7 @@ pipeline {
       }
       stage('Run Package') {
          steps{
-            testPackage testConfig: [constants: [], forceReload: false, keepConfig: false, loadOnly: false, tbcFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\Testlab_HiL.tbc', tcfFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\SW_Ver_1.tcf'], testFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\0_ET_20204\\Packages\\BasicDrive.pkg'
+            testPackage testConfig: [constants: [], forceReload: false, keepConfig: false, loadOnly: false, tbcFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\Testlab_HiL.tbc', tcfFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\SW_Ver_1.tcf'], testFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Packages\\BasicDrive.pkg'
          }
       }
    }

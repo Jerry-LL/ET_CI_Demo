@@ -687,6 +687,346 @@
 					</TIMING-DIAGRAM-EDITOR-LAYOUT>
 				</DVALUE>
 			</ELEMENT>
+			<ELEMENT dkey="1707x960">
+				<DVALUE format-rev="1" xsi:type="resolutionlayout">
+					<WIN-MAXI xsi:type="boolean">True</WIN-MAXI>
+					<WIN-RECT>
+						<ELEMENT xsi:type="integer">-8</ELEMENT>
+						<ELEMENT xsi:type="integer">-8</ELEMENT>
+						<ELEMENT xsi:type="integer">1723</ELEMENT>
+						<ELEMENT xsi:type="integer">928</ELEMENT>
+					</WIN-RECT>
+					<DEFAULT xsi:type="string">layout2|name=masterMappingView;caption=Global mapping;state=2131967;dir=4;layer=0;row=0;pos=0;prop=179898;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=237;floaty=327;floatw=400;floath=250|name=pnlMappingSet;caption=KWC test values mapping;state=2131454;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=txtLog;caption=Messages;state=2099196;dir=4;layer=0;row=0;pos=2;prop=141188;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=editorNotebook;caption=Editor;state=4212732;dir=5;layer=3;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=1792;dir=4;layer=0;row=0;pos=0;prop=375738;bestw=300;besth=150;minw=300;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=0;row=0;pos=1;prop=100000;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=constantMonitor;caption=Global constants;state=2131967;dir=4;layer=0;row=0;pos=2;prop=179898;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,0,0)=340|dock_size(5,3,0)=200|</DEFAULT>
+					<PACKAGE-SWK xsi:type="string"/>
+					<TEST-CASE-COLUMN-WIDTH>
+						<ELEMENT xsi:type="integer">60</ELEMENT>
+						<ELEMENT xsi:type="integer">300</ELEMENT>
+						<ELEMENT xsi:type="integer">180</ELEMENT>
+						<ELEMENT xsi:type="integer">130</ELEMENT>
+						<ELEMENT xsi:type="integer">200</ELEMENT>
+					</TEST-CASE-COLUMN-WIDTH>
+					<TEST-CASE-PERSPECTIVE xsi:type="string"/>
+					<TEST-CASE-PAGELOCATION xsi:type="string"/>
+					<REPORT-VIEWER-LAYOUT format-rev="3" xsi:type="reportViewerLayout">
+						<SASH-POS xsi:type="integer">250</SASH-POS>
+						<MAPPING-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">125</ELEMENT>
+							<ELEMENT xsi:type="integer">125</ELEMENT>
+							<ELEMENT xsi:type="integer">125</ELEMENT>
+							<ELEMENT xsi:type="integer">55</ELEMENT>
+						</MAPPING-COLUMN-WIDTH>
+						<PROJECT-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+						</PROJECT-COLUMN-WIDTH>
+						<RECORDING-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+							<ELEMENT xsi:type="integer">100</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+						</RECORDING-COLUMN-WIDTH>
+						<TRACE-ANALYSE-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">90</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+							<ELEMENT xsi:type="integer">175</ELEMENT>
+							<ELEMENT xsi:type="integer">175</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+						</TRACE-ANALYSE-COLUMN-WIDTH>
+						<TESTCASE-COLUMNS xsi:type="reportColumns">
+							<COLUMNS>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.src_index</IDENTIFIER>
+									<WIDTH xsi:type="integer">50</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.label</IDENTIFIER>
+									<WIDTH xsi:type="integer">350</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.info</IDENTIFIER>
+									<WIDTH xsi:type="integer">350</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.targetvalue</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.comment</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.original_result</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.result</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">'' as icon</IDENTIFIER>
+									<WIDTH xsi:type="integer">23</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.timestamp_relative</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">mappingitem.target</IDENTIFIER>
+									<WIDTH xsi:type="integer">300</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.timestamp</IDENTIFIER>
+									<WIDTH xsi:type="integer">300</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.relative_realtime</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+							</COLUMNS>
+						</TESTCASE-COLUMNS>
+						<TRACEANALYSIS-COlUMNS xsi:type="reportColumns">
+							<COLUMNS>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.src_index</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.original_result</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">'' as icon</IDENTIFIER>
+									<WIDTH xsi:type="integer">23</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.activity</IDENTIFIER>
+									<WIDTH xsi:type="integer">300</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.name</IDENTIFIER>
+									<WIDTH xsi:type="integer">175</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.info</IDENTIFIER>
+									<WIDTH xsi:type="integer">175</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.comment</IDENTIFIER>
+									<WIDTH xsi:type="integer">250</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+							</COLUMNS>
+						</TRACEANALYSIS-COlUMNS>
+					</REPORT-VIEWER-LAYOUT>
+					<TRF-VIEWER-LAYOUT format-rev="3" xsi:type="trfViewerLayout">
+						<SASH-POS xsi:type="integer">250</SASH-POS>
+						<MAPPING-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">125</ELEMENT>
+							<ELEMENT xsi:type="integer">125</ELEMENT>
+							<ELEMENT xsi:type="integer">125</ELEMENT>
+							<ELEMENT xsi:type="integer">55</ELEMENT>
+						</MAPPING-COLUMN-WIDTH>
+						<PROJECT-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+						</PROJECT-COLUMN-WIDTH>
+						<RECORDING-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">80</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+							<ELEMENT xsi:type="integer">100</ELEMENT>
+							<ELEMENT xsi:type="integer">150</ELEMENT>
+						</RECORDING-COLUMN-WIDTH>
+						<TRACE-ANALYSE-COLUMN-WIDTH>
+							<ELEMENT xsi:type="integer">90</ELEMENT>
+							<ELEMENT xsi:type="integer">300</ELEMENT>
+							<ELEMENT xsi:type="integer">175</ELEMENT>
+							<ELEMENT xsi:type="integer">175</ELEMENT>
+							<ELEMENT xsi:type="integer">250</ELEMENT>
+						</TRACE-ANALYSE-COLUMN-WIDTH>
+						<TESTCASE-COLUMNS xsi:type="reportColumns">
+							<COLUMNS>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.src_index</IDENTIFIER>
+									<WIDTH xsi:type="integer">50</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.label</IDENTIFIER>
+									<WIDTH xsi:type="integer">350</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.info</IDENTIFIER>
+									<WIDTH xsi:type="integer">350</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.targetvalue</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.comment</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.original_result</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.result</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">'' as icon</IDENTIFIER>
+									<WIDTH xsi:type="integer">23</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.timestamp_relative</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">mappingitem.target</IDENTIFIER>
+									<WIDTH xsi:type="integer">300</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.timestamp</IDENTIFIER>
+									<WIDTH xsi:type="integer">300</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.relative_realtime</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+							</COLUMNS>
+						</TESTCASE-COLUMNS>
+						<TRACEANALYSIS-COlUMNS xsi:type="reportColumns">
+							<COLUMNS>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.src_index</IDENTIFIER>
+									<WIDTH xsi:type="integer">80</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.original_result</IDENTIFIER>
+									<WIDTH xsi:type="integer">100</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">'' as icon</IDENTIFIER>
+									<WIDTH xsi:type="integer">23</WIDTH>
+									<VISIBLE xsi:type="boolean">False</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.activity</IDENTIFIER>
+									<WIDTH xsi:type="integer">300</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.name</IDENTIFIER>
+									<WIDTH xsi:type="integer">175</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.info</IDENTIFIER>
+									<WIDTH xsi:type="integer">175</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+								<ELEMENT xsi:type="reportColumn">
+									<IDENTIFIER xsi:type="string">reportitem_data.comment</IDENTIFIER>
+									<WIDTH xsi:type="integer">250</WIDTH>
+									<VISIBLE xsi:type="boolean">True</VISIBLE>
+								</ELEMENT>
+							</COLUMNS>
+						</TRACEANALYSIS-COlUMNS>
+					</TRF-VIEWER-LAYOUT>
+					<STIMULI-EDITOR-LAYOUT xsi:type="stimuliEditorLayout">
+						<DIALOG-MAXIMIZED xsi:type="boolean">True</DIALOG-MAXIMIZED>
+						<DIALOG-SIZE>
+							<ELEMENT xsi:type="integer">600</ELEMENT>
+							<ELEMENT xsi:type="integer">400</ELEMENT>
+						</DIALOG-SIZE>
+						<DIALOG-POSITION>
+							<ELEMENT xsi:type="integer">0</ELEMENT>
+							<ELEMENT xsi:type="integer">0</ELEMENT>
+						</DIALOG-POSITION>
+						<EDITOR-PERSPECTIVE xsi:type="string"/>
+					</STIMULI-EDITOR-LAYOUT>
+					<TIMING-DIAGRAM-EDITOR-LAYOUT xsi:type="timingDiagramEditorLayout">
+						<MAXIMIZED xsi:type="boolean">True</MAXIMIZED>
+						<WINDOW-RECT>
+							<ELEMENT xsi:type="integer">-1</ELEMENT>
+							<ELEMENT xsi:type="integer">-1</ELEMENT>
+							<ELEMENT xsi:type="integer">1200</ELEMENT>
+							<ELEMENT xsi:type="integer">800</ELEMENT>
+						</WINDOW-RECT>
+						<ANIMATION-ENABLED xsi:type="boolean">False</ANIMATION-ENABLED>
+						<PERSPECTIVE xsi:type="string"/>
+						<PARAMETER-COLUMNS-RATIO>
+							<ELEMENT xsi:type="float">0.5</ELEMENT>
+							<ELEMENT xsi:type="float">0.5</ELEMENT>
+						</PARAMETER-COLUMNS-RATIO>
+						<ASSIGNMENT-COLUMNS-RATIO>
+							<ELEMENT xsi:type="float">0.26666666666666666</ELEMENT>
+							<ELEMENT xsi:type="float">0.13333333333333333</ELEMENT>
+							<ELEMENT xsi:type="float">0.13333333333333333</ELEMENT>
+							<ELEMENT xsi:type="float">0.4</ELEMENT>
+							<ELEMENT xsi:type="float">0.06666666666666667</ELEMENT>
+						</ASSIGNMENT-COLUMNS-RATIO>
+					</TIMING-DIAGRAM-EDITOR-LAYOUT>
+				</DVALUE>
+			</ELEMENT>
 			<ELEMENT dkey="1920x1080">
 				<DVALUE format-rev="1" xsi:type="resolutionlayout">
 					<WIN-MAXI xsi:type="boolean">True</WIN-MAXI>
