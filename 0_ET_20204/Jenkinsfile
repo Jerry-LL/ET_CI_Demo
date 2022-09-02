@@ -10,18 +10,18 @@ pipeline {
       }
       stage('Start ECU-TEST') {
          steps{
-            startET toolName: 'ECU-TEST 2020.4', workspaceDir: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204'
+            startET toolName: 'ECU-TEST 2022.2', workspaceDir: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204'
          }
       }
       stage('Run Package') {
          steps{
-            testPackage testConfig: [constants: [], forceReload: false, keepConfig: false, loadOnly: false, tbcFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\Testlab_HiL.tbc', tcfFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\SW_Ver_1.tcf'], testFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\testECU-TEST\\3_ET_20204\\Packages\\BasicDrive.pkg'
+            testPackage testConfig: [constants: [], forceReload: false, keepConfig: false, loadOnly: false, tbcFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\Testlab_HiL.tbc', tcfFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204\\Configurations\\SW_Ver_1.tcf'], testFile: 'C:\\Users\\Jerry\\Documents\\GitHub\\0_ET_20204\\Packages\\BasicDrive.pkg'
          }
       }
    }
    post {
       always {
-         publishUNIT 'ECU-TEST 2020.4'
+         publishUNIT 'ECU-TEST 2022.2'
          publishATX atxName: 'TEST-GUIDE', runOnFailed: true
          publishTRF()
          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
