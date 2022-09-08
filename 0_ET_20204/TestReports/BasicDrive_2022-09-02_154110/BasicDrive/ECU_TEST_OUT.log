@@ -1,0 +1,58 @@
+
+
+= 02.09.2022 15:41:11 (UTC +8:00) === ECU-TEST 2022.2.125314+1e79c4002501 125314+1e79c4002501 (2022/06/14 12:33:44) (64bit) ===
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+
+Roaming License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 2-oct-2022
+         - licensed for: TURING
+
+
+2022-09-02 15:41:11.477 15404 ManagedWorker-1*PE.Run() INFO:
+                        Start package 'BasicDrive.pkg' with test case execution with sequential analysis job execution
+2022-09-02 15:41:11.548 15404 ManagedWorker-1*PE.Run() INFO:
+                        Test case "BasicDrive" started
+2022-09-02 15:41:11.620 15404 ManagedWorker-1*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "recup" (use 100ms instead of 10ms)
+2022-09-02 15:41:11.626 15404 ManagedWorker-1*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2022-09-02 15:41:11.632 15404 ManagedWorker-1*PE.Run() WARNING:
+                        Acquisition rate could not be used for value "speed" (use 200ms instead of 10ms)
+2022-09-02 15:41:11.692 15404 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-09-02 15:41:11.743 15404 ManagedWorker-1*PE.Run() INFO:
+                        System time mode activated
+2022-09-02 15:41:11.748 15404 ManagedWorker-1*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Plant model
+                        Package "C:\Users\Jerry\Documents\GitHub\ET_CI_Demo\0_ET_20204\Packages\BasicDrive.pkg"#0
+2022-09-02 15:41:11.753 15404 ManagedWorker-1*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Recording group for Engine-Control
+                        Package "C:\Users\Jerry\Documents\GitHub\ET_CI_Demo\0_ET_20204\Packages\BasicDrive.pkg"#0
+2022-09-02 15:41:34.077 15404 ManagedWorker-1*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model: Autostop
+                        Package "C:\Users\Jerry\Documents\GitHub\ET_CI_Demo\0_ET_20204\Packages\BasicDrive.pkg"#0
+2022-09-02 15:41:34.081 15404 ManagedWorker-1*PE.Run() INFO:
+                        1. Recording for Recording group for Engine-Control: Autostop
+                        Package "C:\Users\Jerry\Documents\GitHub\ET_CI_Demo\0_ET_20204\Packages\BasicDrive.pkg"#0
+2022-09-02 15:41:34.108 15404 ManagedWorker-1*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-09-02 15:41:35.459 15404 ManagedWorker-1*PE.Run() INFO:
+                        Test case "BasicDrive" completed
+2022-09-02 15:41:37.395 15404 ManagedWorker-1*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\Users\Jerry\Documents\GitHub\ET_CI_Demo\0_ET_20204\Packages\BasicDrive.pkg" -> "Basic Drive")
+2022-09-02 15:41:37.412 15404 ManagedWorker-1*PE.Run() WARNING:
+                        
+File "C:\Users\Jerry\Documents\GitHub\ET_CI_Demo\0_ET_20204\.workspace\analysisexecution.xml", line 4, column 2
+Unknown xml element SUPPRESS-END-OF-FILE-ERRORS in AnalysisExecution
+2022-09-02 15:41:37.458 15404 ManagedWorker-1*PE.Run() DEBUG:
+                        Performing episode ...
+2022-09-02 15:41:37.462 15404 ManagedWorker-1*PE.Run() DEBUG:
+                        
+2022-09-02 15:41:40.210 15404 ManagedWorker-1*PE.Run() DEBUG:
+                        Episode completed
+2022-09-02 15:41:40.212 15404 ManagedWorker-1*PE.Run() DEBUG:
+                        
