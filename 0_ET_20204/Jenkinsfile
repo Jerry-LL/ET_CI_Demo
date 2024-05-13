@@ -10,7 +10,7 @@ pipeline {
       }
       stage('Start ECU-TEST') {
          steps{
-            startET toolName: 'ECU-TEST 2022.1', workspaceDir: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204'
+            startET toolName: 'ECU-TEST 2024.1', workspaceDir: 'C:\\Users\\Jerry\\Documents\\GitHub\\ET_CI_Demo\\0_ET_20204'
          }
       }
       stage('Run Package') {
@@ -21,7 +21,7 @@ pipeline {
    }
    post {
       always {
-         publishUNIT 'ECU-TEST 2022.2'
+         publishUNIT 'ECU-TEST 2024.1'
          publishATX atxName: 'TEST-GUIDE', runOnFailed: true
          publishTRF()
          publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SWK-SETTINGS format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<SWK-SETTINGS format-rev="1" unitsBehaviour="6.5" xsi:type="swkSettings">
-		<HOST xsi:type="string">localhost:8080</HOST>
-	</SWK-SETTINGS>
-	<SWK-FAVORITES xsi:type="swkFavorites"/>
-</SWK-SETTINGS>
