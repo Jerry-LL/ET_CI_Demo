@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ANALYSISEXEC-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ANALYSIS-EXECUTION xsi:type="analysisExecution">
+		<PARALLEL-EXECUTION xsi:type="parallelAnalysisExecution"/>
+		<REPORT xsi:type="analysisReport"/>
+	</ANALYSIS-EXECUTION>
+</ANALYSISEXEC-SETTINGS>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LOGGING-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<LOGGING xsi:type="loggingData">
+		<LEVEL xsi:type="integer">2</LEVEL>
+		<TO-WINDOW xsi:type="boolean">True</TO-WINDOW>
+		<TO-WINAPI xsi:type="boolean">False</TO-WINAPI>
+		<DEBUG-INFO xsi:type="integer">0</DEBUG-INFO>
+	</LOGGING>
+</LOGGING-SETTINGS>

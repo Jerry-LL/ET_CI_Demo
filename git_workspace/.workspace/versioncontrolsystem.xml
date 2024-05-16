@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SCM-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SCM-OPTIONS format-rev="2" xsi:type="scmOptionsData">
+		<ENABLE-SCM-AUTO-ADD xsi:type="boolean">True</ENABLE-SCM-AUTO-ADD>
+		<ENABLE-SCM-AUTO-SYNC-CHECK xsi:type="boolean">True</ENABLE-SCM-AUTO-SYNC-CHECK>
+		<VERSION-CONTROL-TOOL xsi:type="string">TortoiseGit</VERSION-CONTROL-TOOL>
+	</SCM-OPTIONS>
+</SCM-SETTINGS>
