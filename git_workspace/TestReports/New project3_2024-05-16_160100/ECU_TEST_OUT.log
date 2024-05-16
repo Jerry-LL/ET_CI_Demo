@@ -1,0 +1,230 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+Number of CPUs:    12
+RAM:               15.4GB
+Diskinfo:          2.0GB/252.1GB
+Operating system:  Windows-10-10.0.22621
+Long path support: True
+-------------------------------------------------------------------------
+
+= 16.05.2024 16:01:00 (UTC +8:00) === ecu.test 2023.4.3.143937+fa3cbd256512 143937+fa3cbd256512 (2024/01/18 16:25:03) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] / wx: 4.2.1+tt.2
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 31-dec-2024
+         - licensed for: Turing
+         - Server: 192.168.166.20
+
+
+2024-05-16 16:01:00.650 30228 ManagedWorker-2 INFO:
+                        Start project 'New project3.prj' with test case execution with downstream analysis job execution
+2024-05-16 16:01:00.660 30228 ManagedWorker-2 DEBUG:
+                        EnqueueRun: Invalid event instance, creating dummy event.
+2024-05-16 16:01:00.661 30228 ManagedWorker-2 DEBUG:
+                        EnqueueRun: Adding RunObject to Queue
+2024-05-16 16:01:00.662 30228 ManagedWorker-2 DEBUG:
+                        TM.EnqueueJob: schedule job
+2024-05-16 16:01:00.662 30228 ManagedWorker-2 DEBUG:
+                        TM.EnqueueJob: job scheduled
+2024-05-16 16:01:00.663 30228 ManagedWorker-2 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-2 requeueing jobs
+2024-05-16 16:01:00.663 30228 ManagedWorker-2 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-2 queued job ready
+2024-05-16 16:01:00.664 30228 ManagedWorker-2 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-2 notify worker
+2024-05-16 16:01:00.664 30228 ManagedWorker-2 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-2 worker notified
+2024-05-16 16:01:00.665 30228 ManagedWorker-4 DEBUG:
+                        TM.GetJob: ManagedWorker-4 notified for incoming job
+2024-05-16 16:01:00.666 30228 ManagedWorker-4 DEBUG:
+                        TM.GetJob: ManagedWorker-4 get job from queue(2)
+2024-05-16 16:01:00.666 30228 ManagedWorker-4 DEBUG:
+                        MW.exec: ManagedWorker-4 Executing None , event Type <tts.lib.workerThreads.WTCommon.AutocheckResultEvent object at 0x0000026667D68540>
+2024-05-16 16:01:00.667 30228 ManagedWorker-4 DEBUG:
+                        MW.exec: ManagedWorker-4 Execution done, result =  None
+2024-05-16 16:01:00.667 30228 ManagedWorker-4 DEBUG:
+                        MW.exec: ManagedWorker-4 WT Notifying <tts.lib.workerThreads.WTCommon.AutocheckResultEvent object at 0x0000026667D68540>
+2024-05-16 16:01:00.668 30228 ManagedWorker-4 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-4 requeueing jobs
+2024-05-16 16:01:00.669 30228 ManagedWorker-4 DEBUG:
+                        TM.GetJob: ManagedWorker-4 get job from queue
+2024-05-16 16:01:00.678 30228 ManagedWorker-2 DEBUG:
+                        CheckProjectSupportsGroupedExecution: Abort: No active ports
+2024-05-16 16:01:00.695 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: working directory: C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages
+2024-05-16 16:01:00.696 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: cmd: C:\Program Files\Git\bin\git.exe log -1 --format="%H" C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg
+2024-05-16 16:01:00.797 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: working directory: C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages
+2024-05-16 16:01:00.797 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: cmd: C:\Program Files\Git\bin\git.exe status -z --porcelain=1 C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg
+2024-05-16 16:01:00.942 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: working directory: C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages
+2024-05-16 16:01:00.943 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: cmd: C:\Program Files\Git\bin\git.exe rev-parse --abbrev-ref --symbolic-full-name @{u}
+2024-05-16 16:01:01.085 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: working directory: C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages
+2024-05-16 16:01:01.086 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: cmd: C:\Program Files\Git\bin\git.exe remote get-url origin
+2024-05-16 16:01:01.211 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: working directory: C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages
+2024-05-16 16:01:01.212 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        SCM-Client: cmd: C:\Program Files\Git\bin\git.exe status -z --porcelain=1 C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg
+2024-05-16 16:01:01.321 30228 ManagedWorker-2*PE.Run() INFO:
+                        Initialize variables...
+2024-05-16 16:01:01.323 30228 ManagedWorker-2*PE.Run() INFO:
+                        Initializing execution mapping...
+2024-05-16 16:01:01.325 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Unnamed" 2638188545552
+2024-05-16 16:01:01.328 30228 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-05-16 16:01:01.329 30228 ManagedWorker-2*PE.Run() INFO:
+                        Preprocess of test steps in Package 0
+2024-05-16 16:01:01.330 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-05-16 16:01:01.331 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        ModelAccessData: GetAll() -> []
+2024-05-16 16:01:01.331 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2024-05-16 16:01:01.332 30228 ManagedWorker-2*PE.Run() INFO:
+                        System time mode activated
+2024-05-16 16:01:01.332 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20124] Executing TestStep <--   Package 0            - 0
+2024-05-16 16:01:01.333 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        Reporter.EnterContainer: Failed to set internal pointer to child item: current result item has no children
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:01.334 30228 ManagedWorker-2*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Test case variables
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:01.334 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20124] Executing TestStep -->   Package 0            - PRE
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:01.336 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20124] Executing TestStep <--   Package 0            - PRE
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:01.337 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20124] Executing TestStep -->   Package 0            - 1
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:01.338 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20124] Executing TestStep <--   Package 0            - 1
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:01.519 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.520 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.525 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.526 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.530 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.531 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.535 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.536 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.539 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.541 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.545 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.546 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.550 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.551 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.555 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.556 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.559 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.561 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.563 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.564 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.567 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.569 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.572 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.573 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.576 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.577 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.579 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.580 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.582 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.583 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.586 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.587 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.590 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.591 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.595 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.596 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.600 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.601 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.606 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetSetting('workspacePath')
+2024-05-16 16:01:01.607 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetSetting -> C:\Users\jiujie\Desktop\chatillon25t\git_workspace
+2024-05-16 16:01:01.610 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: CALL: GetVersion()
+2024-05-16 16:01:01.611 30228 XMLRPC-API-Listener DEBUG:
+                        XMLRPCAPI: DONE: GetVersion -> 2023.4.3.143937+fa3cbd256512
+2024-05-16 16:01:01.679 30228 ManagedWorker-4 DEBUG:
+                        TM.GetJob: ManagedWorker-4 job queue empty
+2024-05-16 16:01:01.680 30228 ManagedWorker-4 DEBUG:
+                        TM.GetJob: ManagedWorker-4 waiting for jobs
+2024-05-16 16:01:02.341 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20124] Executing TestStep -->   Package 0            - POST
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:02.344 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20124] Executing TestStep <--   Package 0            - POST
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:02.346 30228 ManagedWorker-2*PE.Run() INFO:
+                        1. Recording for Test case variables: Autostop
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:02.348 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        MAPPING: ANALYSIS JOB MS: Adding "Unnamed" 2638188545552
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:02.353 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        Reporter.LeaveContainer: Failed to set internal pointer beyond start result item
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:01:02.355 30228 ManagedWorker-2*PE.Run() INFO:
+                        Post process of test steps in Package 0
+2024-05-16 16:01:02.357 30228 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-05-16 16:01:02.369 30228 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-05-16 16:01:02.398 30228 ManagedWorker-2 INFO:
+                        Finalizing report 'New project3.trf'...
+2024-05-16 16:01:02.496 30228 ManagedWorker-2 DEBUG:
+                        Berechne Reportsignatur...: 

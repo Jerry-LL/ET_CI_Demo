@@ -11,12 +11,12 @@
 				<DVALUE format-rev="1" xsi:type="resolutionlayout">
 					<WIN-MAXI xsi:type="boolean">True</WIN-MAXI>
 					<WIN-RECT>
-						<ELEMENT xsi:type="integer">0</ELEMENT>
-						<ELEMENT xsi:type="integer">0</ELEMENT>
-						<ELEMENT xsi:type="integer">-1</ELEMENT>
-						<ELEMENT xsi:type="integer">-1</ELEMENT>
+						<ELEMENT xsi:type="integer">-8</ELEMENT>
+						<ELEMENT xsi:type="integer">-8</ELEMENT>
+						<ELEMENT xsi:type="integer">2064</ELEMENT>
+						<ELEMENT xsi:type="integer">1248</ELEMENT>
 					</WIN-RECT>
-					<DEFAULT xsi:type="string"/>
+					<DEFAULT xsi:type="string">layout2|name=masterMappingView;caption=Global mapping;state=2131967;dir=4;layer=0;row=0;pos=0;prop=179898;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=237;floaty=327;floatw=400;floath=250|name=pnlMappingSet;caption=KWC test values mapping;state=2131454;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=txtLog;caption=Messages;state=2099196;dir=3;layer=1;row=0;pos=0;prop=141188;bestw=200;besth=150;minw=200;minh=150;maxw=-1;maxh=-1;floatx=391;floaty=1219;floatw=400;floath=250|name=editorNotebook;caption=Editor;state=4212732;dir=5;layer=3;row=0;pos=0;prop=1;bestw=200;besth=300;minw=200;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=dataViewerNotebook;caption=Actions;state=1792;dir=4;layer=0;row=0;pos=0;prop=375738;bestw=300;besth=150;minw=300;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=configMonitor;caption=Configurations;state=2098684;dir=4;layer=0;row=0;pos=1;prop=100000;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=constantMonitor;caption=Global constants;state=2131967;dir=4;layer=0;row=0;pos=2;prop=179898;bestw=200;besth=70;minw=200;minh=70;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(4,0,0)=341|dock_size(5,3,0)=200|dock_size(3,1,0)=362|</DEFAULT>
 					<PACKAGE-SWK xsi:type="string"/>
 					<TEST-CASE-COLUMN-WIDTH>
 						<ELEMENT xsi:type="integer">60</ELEMENT>
@@ -398,10 +398,7 @@
 			<TIMESTAMP_COL_WIDTH xsi:type="integer">80</TIMESTAMP_COL_WIDTH>
 			<AUTO_SCROLLING xsi:type="boolean">True</AUTO_SCROLLING>
 			<FILTER_CHOICE>
-				<ELEMENT xsi:type="integer">0</ELEMENT>
-				<ELEMENT xsi:type="integer">1</ELEMENT>
 				<ELEMENT xsi:type="integer">2</ELEMENT>
-				<ELEMENT xsi:type="integer">3</ELEMENT>
 			</FILTER_CHOICE>
 		</LOG-CTRL-LAYOUT>
 	</LAYOUT>

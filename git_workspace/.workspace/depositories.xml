@@ -5,10 +5,9 @@
 			<DVALUE xsi:type="testGuideDepository">
 				<URL xsi:type="string">192.168.166.20</URL>
 				<PORT xsi:type="integer">8085</PORT>
-				<DIRECTORY xsi:type="string">C:\Users\Admin\Desktop\jiujie_tg_artifact</DIRECTORY>
-				<PROJECT_ID xsi:type="integer">6</PROJECT_ID>
-				<AUTH-KEY xsi:type="string">NfQFJtA=.sZOGTbLdgRXBo4XpO0CwateQHEQQyMG1z7UNwnQTNkY=</AUTH-KEY>
-				<DEPOSITORY-ID xsi:type="string">123</DEPOSITORY-ID>
+				<PROJECT_ID xsi:type="integer">23</PROJECT_ID>
+				<AUTH-KEY xsi:type="string">cenYvEs=.2pgHwSUlfVfEddJhe9qLFnh4WeNdevFAm-CVDaLibXA=</AUTH-KEY>
+				<DEPOSITORY-ID xsi:type="string">asdf</DEPOSITORY-ID>
 			</DVALUE>
 		</ELEMENT>
 	</DEPOSITORIES>
