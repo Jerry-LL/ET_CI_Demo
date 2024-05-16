@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Playbook</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">d1a065e2022811eb808dfc7774225e38</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Setup</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">e6bba424022811ebb045fc7774225e38</ID>
+			<COMPONENTS/>
+		</COMPONENT>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Tests</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">ef528efa022911eb9537fc7774225e38</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="6" xsi:type="packageTest">
+					<NAME xsi:type="string">Package 0</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">3d3caea9135011efb1c888b111243624</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="2" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Package 0.pkg</VALUE>
+						</PATH-EXPRESSION>
+					</PACKAGE-REF>
+				</COMPONENT>
+			</COMPONENTS>
+		</COMPONENT>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Teardown</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">30342d36022911eb9837fc7774225e38</ID>
+			<COMPONENTS/>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>
