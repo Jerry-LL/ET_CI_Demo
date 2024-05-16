@@ -1,0 +1,126 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+Number of CPUs:    12
+RAM:               15.4GB
+Diskinfo:          2.0GB/252.1GB
+Operating system:  Windows-10-10.0.22621
+Long path support: True
+-------------------------------------------------------------------------
+
+= 16.05.2024 16:34:32 (UTC +8:00) === ecu.test 2023.4.3.143937+fa3cbd256512 143937+fa3cbd256512 (2024/01/18 16:25:03) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] / wx: 4.2.1+tt.2
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 31-dec-2024
+         - licensed for: Turing
+         - Server: 192.168.166.20
+
+
+2024-05-16 16:34:32.247 30936 ManagedWorker-5 INFO:
+                        Start project 'New project3.prj' with test case execution with downstream analysis job execution
+2024-05-16 16:34:32.264 30936 ManagedWorker-5 DEBUG:
+                        EnqueueRun: Invalid event instance, creating dummy event.
+2024-05-16 16:34:32.264 30936 ManagedWorker-5 DEBUG:
+                        EnqueueRun: Adding RunObject to Queue
+2024-05-16 16:34:32.271 30936 ManagedWorker-5 DEBUG:
+                        TM.EnqueueJob: schedule job
+2024-05-16 16:34:32.272 30936 ManagedWorker-5 DEBUG:
+                        TM.EnqueueJob: job scheduled
+2024-05-16 16:34:32.273 30936 ManagedWorker-5 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-5 requeueing jobs
+2024-05-16 16:34:32.274 30936 ManagedWorker-5 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-5 queued job ready
+2024-05-16 16:34:32.275 30936 ManagedWorker-5 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-5 notify worker
+2024-05-16 16:34:32.276 30936 ManagedWorker-5 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-5 worker notified
+2024-05-16 16:34:32.277 30936 ManagedWorker-7 DEBUG:
+                        TM.GetJob: ManagedWorker-7 notified for incoming job
+2024-05-16 16:34:32.278 30936 ManagedWorker-7 DEBUG:
+                        TM.GetJob: ManagedWorker-7 get job from queue(2)
+2024-05-16 16:34:32.279 30936 ManagedWorker-7 DEBUG:
+                        MW.exec: ManagedWorker-7 Executing None , event Type <tts.lib.workerThreads.WTCommon.AutocheckResultEvent object at 0x0000026D048270C0>
+2024-05-16 16:34:32.280 30936 ManagedWorker-7 DEBUG:
+                        MW.exec: ManagedWorker-7 Execution done, result =  None
+2024-05-16 16:34:32.280 30936 ManagedWorker-7 DEBUG:
+                        MW.exec: ManagedWorker-7 WT Notifying <tts.lib.workerThreads.WTCommon.AutocheckResultEvent object at 0x0000026D048270C0>
+2024-05-16 16:34:32.281 30936 ManagedWorker-7 DEBUG:
+                        TM.ScheduleJobs: ManagedWorker-7 requeueing jobs
+2024-05-16 16:34:32.282 30936 ManagedWorker-7 DEBUG:
+                        TM.GetJob: ManagedWorker-7 get job from queue
+2024-05-16 16:34:32.285 30936 ManagedWorker-5 DEBUG:
+                        CheckProjectSupportsGroupedExecution: Abort: No active ports
+2024-05-16 16:34:32.311 30936 ManagedWorker-5*PE.Run() INFO:
+                        Initialize variables...
+2024-05-16 16:34:32.317 30936 ManagedWorker-5*PE.Run() INFO:
+                        Initializing execution mapping...
+2024-05-16 16:34:32.317 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        MAPPING: EXECUTION MS: Adding "Unnamed" 2667300768592
+2024-05-16 16:34:32.321 30936 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-05-16 16:34:32.323 30936 ManagedWorker-5*PE.Run() INFO:
+                        Preprocess of test steps in Package 0
+2024-05-16 16:34:32.324 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-05-16 16:34:32.325 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        ModelAccessData: GetAll() -> []
+2024-05-16 16:34:32.326 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        ExecutionModeManager: Initializing time base...
+2024-05-16 16:34:32.328 30936 ManagedWorker-5*PE.Run() INFO:
+                        System time mode activated
+2024-05-16 16:34:32.329 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20548] Executing TestStep <--   Package 0            - 0
+2024-05-16 16:34:32.330 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        Reporter.EnterContainer: Failed to set internal pointer to child item: current result item has no children
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:32.331 30936 ManagedWorker-5*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Test case variables
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:32.333 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20548] Executing TestStep -->   Package 0            - PRE
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:32.334 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20548] Executing TestStep <--   Package 0            - PRE
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:32.336 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20548] Executing TestStep -->   Package 0            - 1
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:32.337 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20548] Executing TestStep <--   Package 0            - 1
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:33.296 30936 ManagedWorker-7 DEBUG:
+                        TM.GetJob: ManagedWorker-7 job queue empty
+2024-05-16 16:34:33.297 30936 ManagedWorker-7 DEBUG:
+                        TM.GetJob: ManagedWorker-7 waiting for jobs
+2024-05-16 16:34:33.338 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20548] Executing TestStep -->   Package 0            - POST
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:33.339 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: [Thread:     20548] Executing TestStep <--   Package 0            - POST
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:33.342 30936 ManagedWorker-5*PE.Run() INFO:
+                        1. Recording for Test case variables: Autostop
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:33.344 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        MAPPING: ANALYSIS JOB MS: Adding "Unnamed" 2667300768592
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:33.347 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        Reporter.LeaveContainer: Failed to set internal pointer beyond start result item
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 16:34:33.349 30936 ManagedWorker-5*PE.Run() INFO:
+                        Post process of test steps in Package 0
+2024-05-16 16:34:33.350 30936 ManagedWorker-5*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-05-16 16:34:33.362 30936 ManagedWorker-5*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-05-16 16:34:33.384 30936 ManagedWorker-5 INFO:
+                        Finalizing report 'New project3.trf'...
+2024-05-16 16:34:33.475 30936 ManagedWorker-5 DEBUG:
+                        Berechne Reportsignatur...: 
