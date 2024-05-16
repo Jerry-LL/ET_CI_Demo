@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DEPOSITORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<DEPOSITORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DEPOSITORIES>
+		<ELEMENT dkey="test.guide">
+			<DVALUE xsi:type="testGuideDepository">
+				<URL xsi:type="string">192.168.166.20</URL>
+				<PORT xsi:type="integer">8085</PORT>
+				<DIRECTORY xsi:type="string">C:\Users\Admin\Desktop\jiujie_tg_artifact</DIRECTORY>
+				<PROJECT_ID xsi:type="integer">6</PROJECT_ID>
+				<AUTH-KEY xsi:type="string">NfQFJtA=.sZOGTbLdgRXBo4XpO0CwateQHEQQyMG1z7UNwnQTNkY=</AUTH-KEY>
+				<DEPOSITORY-ID xsi:type="string">123</DEPOSITORY-ID>
+			</DVALUE>
+		</ELEMENT>
+	</DEPOSITORIES>
+</DEPOSITORY-SETTINGS>

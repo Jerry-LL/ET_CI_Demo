@@ -5,10 +5,10 @@
 		<SERVICE-HOST-LOCATION xsi:type="string">192.168.166.20</SERVICE-HOST-LOCATION>
 		<REPORT-SETTINGS>
 			<ELEMENT dkey="projectId">
-				<DVALUE xsi:type="string">5</DVALUE>
+				<DVALUE xsi:type="string">6</DVALUE>
 			</ELEMENT>
 			<ELEMENT dkey="uploadAuthenticationKey">
-				<DVALUE xsi:type="string">iMvDBFY\=.onrrVglqm_wLTlkmsF7wfTFdf53ZuLnM7dV8ViuiTdw\=</DVALUE>
+				<DVALUE xsi:type="string">NfQFJtA=.sZOGTbLdgRXBo4XpO0CwateQHEQQyMG1z7UNwnQTNkY=</DVALUE>
 			</ELEMENT>
 		</REPORT-SETTINGS>
 	</TESTREPORTSERVICE>

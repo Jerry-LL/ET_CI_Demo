@@ -1,0 +1,53 @@
+
+
+-------------------------------------------------------------------------
+Systeminfo:
+CPU:               AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+Number of CPUs:    12
+RAM:               15.4GB
+Diskinfo:          2.0GB/252.1GB
+Operating system:  Windows-10-10.0.22621
+Long path support: True
+-------------------------------------------------------------------------
+
+= 16.05.2024 14:44:44 (UTC +8:00) === ecu.test 2023.4.3.143937+fa3cbd256512 143937+fa3cbd256512 (2024/01/18 16:25:03) (64bit) ===
+Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] / wx: 4.2.1+tt.2
+
+License: ecu.test
+         - License options:
+             + ecu.test diagnostics
+             + trace.check
+         - valid up to version: 2024.4
+         - valid until: 31-dec-2024
+         - licensed for: Turing
+         - Server: 192.168.166.20
+
+
+2024-05-16 14:44:44.332 30228 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" started
+2024-05-16 14:44:44.345 30228 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2024-05-16 14:44:44.346 30228 ManagedWorker-4*PE.Run() INFO:
+                        System time mode activated
+2024-05-16 14:44:44.347 30228 ManagedWorker-4*PE.Run() INFO:
+                        Auto-Start/Stop: Complete test case: Recording for Test case variables
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 14:44:45.363 30228 ManagedWorker-4*PE.Run() INFO:
+                        1. Recording for Test case variables: Autostop
+                        Package "C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg"#0
+2024-05-16 14:44:45.367 30228 ManagedWorker-4*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2024-05-16 14:44:45.372 30228 ManagedWorker-4*PE.Run() INFO:
+                        Test case "Package 0" completed
+2024-05-16 14:44:45.392 30228 ManagedWorker-4*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\Users\jiujie\Desktop\chatillon25t\git_workspace\Packages\Package 0.pkg" -> "Trace analysis 1")
+2024-05-16 14:44:45.398 30228 ManagedWorker-4*PE.Run() DEBUG:
+                        Performing episode ...
+2024-05-16 14:44:45.399 30228 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2024-05-16 14:44:45.400 30228 ManagedWorker-4*PE.Run() DEBUG:
+                        Episode completed
+2024-05-16 14:44:45.400 30228 ManagedWorker-4*PE.Run() DEBUG:
+                        
+2024-05-16 14:44:45.542 30228 ManagedWorker-4 INFO:
+                        Finalizing report 'New project1.trf'...
